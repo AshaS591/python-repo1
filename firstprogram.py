@@ -3,6 +3,6 @@ print('Hello Python Lovers')
 age=int(input('Enter age :'))
 if age>=18:
     print('Eligible to vote')
+    print('Congratulations you are eligible to vote')
 else:
     print('Not eligible to vote')
-print('this is my first program')
