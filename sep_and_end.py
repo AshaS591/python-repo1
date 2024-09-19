@@ -8,6 +8,9 @@ print('🤨🙂😑🤔🤩☺️😚😥😮😶🙄😏',sep='%%')
 print("🤩",'😍','😁','😂','🤣','🥰','😅','🤗','🙂',sep='100%')
 print('python','sql','html','css','javascript',sep='\n') #\n means new line
 
+#######################################################################################
+#######################################################################################
+
 #end is used to add specific character or sentence or whatever that we want to add at the end after printing all the values in the print function 
 # by default end adds new line character
 print('hello!')
