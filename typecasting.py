@@ -1,3 +1,4 @@
+############################################################
 # 1.int to other
 num=100
 print(float(num))
@@ -10,6 +11,8 @@ print(str(num))
 # print(tuple(num)) throws type error
 # print(dict(num))
 
+############################################################
+############################################################
 # 2.float to other
 num=25.45
 print(int(num))
@@ -21,6 +24,9 @@ print(str(num))
 # print(set(num))
 # print(tuple(num)) #throws type error
 # print(dict(num))
+
+############################################################
+############################################################
 
 # 3.complex to other
 num=12+0j
@@ -34,6 +40,9 @@ print(str(num))
 # print(tuple(num)) throws type error
 # print(dict(num))
 
+############################################################
+############################################################
+
 # 4.bool to other
 num=True
 print(int(num))
@@ -45,6 +54,9 @@ print(str(num))
 # print(set(num))
 # print(tuple(num)) #throws type error
 # print(dict(num))
+
+############################################################
+############################################################
 
 # 5. string to other datatype
 string='100'
@@ -168,7 +180,9 @@ print(set(string))
 #print(float(string))
 #print(dict(string))
 
-# ************************
+############################################################
+############################################################
+
 # 6. list to other datatype
 list1=[10,23.90,2+9j,'this is python candidate',True,[1,2,'a'],{90,'asha',1},(10,45),{1:'as',2:'has'}]
 print(bool(list1))
@@ -187,6 +201,9 @@ print(set(list2))
 items=[{10,'number'},'as',['Type','bool'],('immutable_datatype','tuple'),{"key":'value','name':'asha'}]
 print(dict(items))
 
+############################################################
+############################################################
+
 # 7. tuple to other datatype
 
 tup=(10,9.99,'asha',15,'78')
@@ -201,6 +218,9 @@ print(str(tup))
 # print(float(tup))
 # print(dict(tup))
 
+############################################################
+############################################################
+
 # 8. set to other datatype
 
 set1={10,9.99,'asha',15,'78'}
@@ -214,6 +234,9 @@ print(str(set1))
 # print(int(tup))
 # print(float(tup))
 # print(dict(tup))
+
+############################################################
+############################################################
 
 # 9. dictionary to other datatype
 
