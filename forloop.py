@@ -254,4 +254,3 @@ for square in range(1,21):
 sum=0
 for num in range(1,21):
     print(f"{num} X {num} X {num} = {num**3}")
-
