@@ -1,24 +1,24 @@
-#1.wap a program to print 'while loop' for 10 times
+#1.wap to print 'while loop' for 10 times
 count=0
 while count<10:
     print('while loop')
     count+=1
 
-#2.wap a program to print first n natural numbers in one line
+#2.wap  to print first n natural numbers in one line
 first=1
 last=int(input('enter n value :'))
 while first<=last:
     print(first,end=' ')
     first+=1
 
-#3.wap a program to print first n whole numbers in one line
+#3.wap  to print first n whole numbers in one line
 first=0
 last=int(input('\nenter n value :'))
 while first<last:
     print(first,end='   ')
     first+=1
 
-#4.wap a program to print even numbers between 1 to 50
+#4.wap  to print even numbers between 1 to 50
 even=1
 print("\nEven numbers")
 while even<=50:
@@ -26,7 +26,7 @@ while even<=50:
         print(even)
     even+=1
 
-#5.wap a program to print odd numbers between 1 to 50
+#5.wap to print odd numbers between 1 to 50
 odd=1
 print("Odd numbers")
 while odd<=50:
@@ -34,7 +34,7 @@ while odd<=50:
         print(odd)
     odd+=1
 
-#6.wap a program to print countdown of a game
+#6.wap to print countdown of a game
 count=10
 print("\nstart countdowning")
 while count>=0:
