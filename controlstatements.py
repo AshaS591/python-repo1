@@ -1,54 +1,54 @@
-# #There are 3 loop control statements
-# #1.break
-# #2.continue
-# #3.pass
+#There are 3 loop control statements
+#1.break
+#2.continue
+#3.pass
 
-# #1.wap to check if the collection is homogeneous collection or not
-# collection = eval(input("Enter a collection :"))
-# homogeneous = True
-# type_ref = type(collection[0])
-# for item in collection:
-#     if type(item) != type_ref:
-#         homogeneous = False
-#         break
-# if homogeneous == True:
-#     print(f"{collection} is homogeneous collection")
-# else:
-#     print(f"{collection} is heterogeneous collection")
+#1.wap to check if the collection is homogeneous collection or not --(ASHA S)
+collection = eval(input("Enter a collection :"))
+homogeneous = True
+type_ref = type(collection[0])
+for item in collection:
+    if type(item) != type_ref:
+        homogeneous = False
+        break
+if homogeneous == True:
+    print(f"{collection} is homogeneous collection")
+else:
+    print(f"{collection} is heterogeneous collection")
 
-# #2.wap to check if the given number is prime or not
-# num = int(input('Enter a number :'))
-# if num==1:
-#     print(f"{num} is not a prime")
-# elif num==2:
-#     print(f"{num} is  a prime")
-# else:
-#     prime=True
-#     for _num in range(2,num):
-#         if num%_num==0:
-#             prime=False
-#             break
-# if prime==True:
-#     print(f"{num} is  a prime")
-# else:
-#     print(f"{num} is not a prime")
+#2.wap to check if the given number is prime or not --(ASHA S)
+num = int(input('Enter a number :'))
+if num==1:
+    print(f"{num} is not a prime")
+elif num==2:
+    print(f"{num} is  a prime")
+else:
+    prime=True
+    for _num in range(2,num):
+        if num%_num==0:
+            prime=False
+            break
+if prime==True:
+    print(f"{num} is  a prime")
+else:
+    print(f"{num} is not a prime")
 
-# #3.wap to validate usrename and password using while loop and for loop
-# actual_username=input('Enter username :')
-# actual_password=input('Enter password :')
-# while True:
-#     username=input('Enter username :')
-#     if username==actual_username:
-#         break
-# for _ in range (3):
-#     password=input("Enter password :")
-#     if password==actual_password:
-#         break
-# else:
-#     print('user blocked...')
+#3.wap to validate usrename and password using while loop and for loop --(ASHA S)
+actual_username=input('Enter username :')
+actual_password=input('Enter password :')
+while True:
+    username=input('Enter username :')
+    if username==actual_username:
+        break
+for _ in range (3):
+    password=input("Enter password :")
+    if password==actual_password:
+        break
+else:
+    print('user blocked...')
 
 
-# #4.wap to check if the string consists only lowercase letters
+# #4.wap to check if the string consists only lowercase letters --(ASHA S)
 string=input("Enter a string :")
 lower=True
 for char in string:
@@ -72,7 +72,7 @@ if number==True:
 else:
     print(f"{num} contains otherthan digits...")
 
-#6.wap to check if the string consists only alphabets
+#6.wap to check if the string consists only alphabets --(ASHA S)
 string=input("Enter a string :")
 alpha=True
 for char in string:
@@ -84,7 +84,7 @@ if alpha==True:
 else:
     print(f"{string} contains otherthan alphabets")
 
-#7.wap to check if the string consists only uppercase letters
+#7.wap to check if the string consists only uppercase letters --(ASHA S)
 string=input("Enter a string :")
 upper=True
 for char in string:
