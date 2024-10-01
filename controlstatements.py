@@ -95,3 +95,4 @@ if upper==True:
     print(f"{string} contains only uppercase letters")
 else:
     print(f"{string} contains otherthan uppercase letters")
+
