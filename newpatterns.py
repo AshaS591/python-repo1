@@ -96,15 +96,15 @@
 #             print(' ',end=" ")
 #     print()
 
-# K
-n=int(input('enter n value :'))
-for row in range(n):
-    for col in range(n):
-        if col==0 or (col==n-1 and row!=n//2) or (row==n//2 and col<n-1) :
-            print('*',end=" ")
-        else:
-            print(' ',end=" ")
-    print()
+# # K
+# n=int(input('enter n value :'))
+# for row in range(n):
+#     for col in range(n):
+#         if col==0 or (row+col==n-2) or (row-col==1 and row>=n//2):
+#             print('*',end=" ")
+#         else:
+#             print(' ',end=" ")
+#     print()
 
 # #L
 # n=int(input('enter n value :'))
@@ -156,15 +156,25 @@ for row in range(n):
 #             print(' ',end=" ")
 #     print()
 
-# R
-n=int(input('enter n value :'))
-for row in range(n):
-    for col in range(n):
-        if col==0 or (col==n-1 and (row!=n//2)) or (row==n//2 and col<n-1) or (row==0 and (col>0 and col!=n-1)) :
-            print('*',end=" ")
-        else:
-            print(' ',end=" ")
-    print()
+# #Q
+# n=int(input('enter n value :'))
+# for row in range(n):
+#     for col in range(n):
+#         if (row==0 and (col>0 and col<n-1)) or (col==0 and (row>0 and row<n-2)) or (row==n-2 and (col>0 and col<n-1)) or (col==n-1 and (row>0 and row<n-2)) or (row==col and row>=n//2)  :
+#             print('*',end=" ")
+#         else:
+#             print(' ',end=" ")
+#     print()
+    
+# # R
+# n=int(input('enter n value :'))
+# for row in range(n):
+#     for col in range(n):
+#         if (col==0 and (row>0 and row<=n-1)) or (col==n-1 and (row!=n//2) and row>0) or (row==n//2 and col<n-1) or (row==0 and col<=n-2) :
+#             print('*',end=" ")
+#         else:
+#             print(' ',end=" ")
+#     print()
 
 # #S
 # n=int(input('enter n value :'))
@@ -192,6 +202,17 @@ for row in range(n):
 # for row in range(n):
 #     for col in range(n):
 #         if row==n-1 or col==0 or col==n-1:
+#             print('*',end=" ")
+#         else:
+#             print(' ',end=" ")
+#     print()
+
+#V
+
+# n=int(input('enter n value :'))
+# for row in range(n):
+#     for col in range(n):
+#         if (row==0 and col==0) or (row==0 and col==n-1) or (row==n-1 and col==n//2) or (row==n//2 and :
 #             print('*',end=" ")
 #         else:
 #             print(' ',end=" ")
