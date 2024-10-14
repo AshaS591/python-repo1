@@ -80,7 +80,14 @@ n=int(input('enter  n value :'))
 num=1
 for row in range(n,0,-1):
     for col in range(row):
-        if num>9:num=1
-        print(num,end=" ")
-        num+=1
+        print(row,end=' ')
     print()
+
+n=int(input('enter  n value :'))
+num=1
+for row in range(n):
+    for col in range(row):
+        print(num,end=' ')
+    num+=1
+    print()
+
