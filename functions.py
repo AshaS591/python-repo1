@@ -85,4 +85,53 @@
 # res=factorial(number)
 # print(f"Factorial of {number} is {res}")
 
-#7.
+#7.wap to sum all the numbers in a list using functions
+def sum_of(list):
+    return sum(list)
+res=sum([10,20,33.56,90,45.99])
+print(res)
+
+#8. wap that accepts a string and counts the number of upper and lower case letters using functions.
+def count_letters(string):
+    lower=0
+    upper=0
+    other=0
+    for char in string:
+        if char.isupper():
+            upper+=1
+        elif char.islower():
+            lower+=1
+        else:
+            other+=1
+    return upper,lower,other
+upper,lower,other=count_letters('The quick Brow Fox')
+print(upper,lower,other)
+    
+#9.Write a Python function that takes a list and returns a new list with distinct elements from the first list.
+def distinct_list(list):
+    new_list=[]
+    for item in  list:
+        if item not in new_list:
+            new_list.append(item)
+    return new_list
+res=distinct_list([10,10,35,9.9,9.99,12,'25','string'])
+print(res)
+
+#10. Write a Python function that takes a number as a parameter and checks whether the number is prime or not.
+def check_prime(num):
+    if num==1:
+        return 'Not a prime'
+    elif num==2:
+        return 'Prime'
+    else:
+        number=2
+        prime=True
+        while number<num//2:
+            if num%number==0:
+                prime=False
+            number+=1
+        if prime==True:
+            return 'Prime'
+       
+res=check_prime(11)
+print(res)
