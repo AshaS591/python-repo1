@@ -7,6 +7,15 @@ print(positive_or_negative(99))
 last_element=lambda collection:collection[-1]
 print(last_element([1,'word','90',99,91,9]))
 
+square_or_cube=lambda num:num**3 if num%2==0 else num**2
+print(square_or_cube(6))
 
+message=lambda :"my name is asha"
+print(message())
 
+length=lambda collection:len(collection) 
+print(length([10,'word',10+0j,90.12,'100']))
+
+greatest_among_two=lambda num1,num2:num1 if num1>num2  else num2
+print(greatest_among_two(10,20))
 

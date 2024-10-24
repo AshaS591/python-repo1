@@ -13,4 +13,15 @@ def odd():
 even_sum=sum(10,20,odd)
 even_sum()
 
-# def demo():
+def demo(greet):
+    print('Inside demo')
+    def inner_demo():
+        print('Inner demo')
+        greet()
+        print('After inner demo...')
+    return inner_demo
+def greet():
+    print('Inside Greet function')
+inner_demo=demo(greet)
+inner_demo()
+
