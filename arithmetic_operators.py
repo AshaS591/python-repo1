@@ -89,3 +89,8 @@ set1={1,2,'asha'}
 set2={9,0,3,1}
 set1=set1-set2
 print(set1)
+
+set1={1,2}
+set2={9,10}
+res=set1+set2
+print(res)
