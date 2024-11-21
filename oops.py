@@ -11,3 +11,10 @@ print(house1)
 house1.doors=7
 print(house1.doors)
 house1.colors(10)
+
+class colors:
+    color1='black'
+    color2='white'
+    color3='pink'
+    def display_color(self,):
+        pass
