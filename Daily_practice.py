@@ -140,6 +140,7 @@ sign_in(username='Asha',password='asha@1405s')
 #                     print('You are minor not eligible to vote')
 # voter_list(10,20,name1='asha',name2='anu')
 
+#1.categorize all vowels in a string
 char=input('enter a char')
 if char.isalpha():
     if char in 'aeiouAEIOU':
@@ -149,7 +150,7 @@ if char.isalpha():
     else:
         print(ord(char))
 
-#2
+#2 greatest among 3 numbers
 num1=int(input('enter num1 :'))
 num2=int(input('enter num2 :'))
 num3=int(input('enter num3 :'))
@@ -163,4 +164,10 @@ else:
         print(f"{num2} is greatest")
     else:
         print(f"{num3} is greatest")
-     
+
+#3. wap to check for leap year 
+year=304
+if year%4==0 and year%100!=0 or year%400==0:
+    print('leap year')
+else:
+    print("not")
