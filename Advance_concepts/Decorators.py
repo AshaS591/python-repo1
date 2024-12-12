@@ -31,3 +31,22 @@ def display(n):
     print(f"calling display function for {n+1} time")
 
 display()
+##################################################################################################
+
+def number(num):
+    def whole_number(func_name):
+        def calculate(*args,**kwargs):
+            print(f"Calculating factorial of number : {num}")
+            Factorial=func_name(num)
+            print(f"Factorial of number : {num} is {Factorial}")
+        return calculate
+    return whole_number
+
+@number(5)
+def factorial(num:int):
+    fact=1
+    for num in range(1,num+1):
+        fact*=num
+    return fact
+
+factorial()
