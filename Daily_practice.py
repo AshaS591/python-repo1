@@ -171,3 +171,46 @@ if year%4==0 and year%100!=0 or year%400==0:
     print('leap year')
 else:
     print("not")
+
+#wap to print roots of a quadratic equation
+a=int(input('enter a:'))
+b=int(input('enter b:'))
+c=int(input('enter c:'))
+d=(b**2)- 4* a*c
+e=d**0.5
+root1=(-b+e)/2*a
+root2=(-b-e)/2*a
+print(f"Roots of {a}x^2{+(b)}x+{c} is {root1} and {root2}")
+
+#wap to swap to numbers
+num1=int(input("enter a number 1: "))
+num2=int(input("enter a number 2: "))
+temp=num1
+num1=num2
+num2=temp
+print(f"the numbers after swaping are num1={num1},num2={num2}")
+
+#wap to swap to numbers without using temp variable
+num1=int(input("enter a number 1: "))
+num2=int(input("enter a number 2: "))
+num1=num1+num2
+num2=num1-num2
+num1=num1-num2
+print(f"the numbers after swaping are num1={num1},num2={num2} without using temp variable")
+
+#wap to print no of vowels in string
+string=input('enter a sequence :')
+low=string.lower()
+a=low.count('a')
+e=low.count('e')
+i=low.count('i')
+o=low.count('o')
+u=low.count('u')
+print(f"count of vowels in {string} is {a+e+i+o+u}")
+
+
+# string palindrome progarame
+string=input('enter the word :')
+rev_str=string[::-1]
+if rev_str==string:
+    print('palindrome')
