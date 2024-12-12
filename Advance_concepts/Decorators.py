@@ -33,6 +33,7 @@ def display(n):
 display()
 ##################################################################################################
 
+
 def number(num):
     def whole_number(func_name):
         def calculate(*args,**kwargs):
