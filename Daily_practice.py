@@ -139,3 +139,28 @@ sign_in(username='Asha',password='asha@1405s')
 #                 else:
 #                     print('You are minor not eligible to vote')
 # voter_list(10,20,name1='asha',name2='anu')
+
+char=input('enter a char')
+if char.isalpha():
+    if char in 'aeiouAEIOU':
+        list1=[]
+        list1.append(char)
+        print(list1)
+    else:
+        print(ord(char))
+
+#2
+num1=int(input('enter num1 :'))
+num2=int(input('enter num2 :'))
+num3=int(input('enter num3 :'))
+if num1>num2:
+    if num1>num3:
+        print(f"{num1} is greatest")
+    else:
+        print(f"{num3} is greatest")
+else:
+    if num2>num3:
+        print(f"{num2} is greatest")
+    else:
+        print(f"{num3} is greatest")
+     
