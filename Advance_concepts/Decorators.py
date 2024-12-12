@@ -81,3 +81,33 @@ def reverse(num:int):
     return rev_num
 
 reverse(456)
+
+##################################################################################################
+
+"""WAP to check for a number palindrome  using decorator"""
+def outer(num):
+    def number(func_name):
+        def check_palindrome(*args,**kwargs):
+            
+            try:
+                rev=func_name(num)
+            except Exception as msg:
+                print(msg)
+            else:
+                if num==rev:
+                    print("Palindrome......")
+                else:
+                    print(" Not a palindrome......")
+        return check_palindrome
+    return number
+
+@outer(998)
+def palindrome(num:int):
+    rev_num=0
+    while num!=0:
+        last_digit=num%10
+        rev_num=rev_num*10+last_digit
+        num//=10
+    return rev_num               
+
+palindrome()
