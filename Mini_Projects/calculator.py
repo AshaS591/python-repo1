@@ -24,8 +24,8 @@ choice=input("...Here you can perform arithmetic operations ...\nDo you like to 
 if choice=='y':
         num1=int(input('Enter first number :\n'))  
 
-        def one_more_time():
-
+        def one_more_check():
+            
             global num1
             print('+\n-\n*\n/\n%\n//')
             operator=input('Pick an operation :\n')
@@ -37,11 +37,11 @@ if choice=='y':
                     one_more_time=input("Type '1' for yes, '2' for exit :\n")
                     if one_more_time=='1':
                         num1=result
-                        one_more_time()
+                        one_more_check()
                     elif one_more_time=='2':
                         break
 
-        one_more_time()
+        one_more_check()
 
 
 
