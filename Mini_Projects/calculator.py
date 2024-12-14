@@ -30,7 +30,7 @@ if choice=='y':
             print('+\n-\n*\n/\n%\n//')
             operator=input('Pick an operation :\n')
             num2=int(input('Enter second number :\n'))
-            if operator in operations:
+            for operator in operations:
                 result=operations[operator](num1,num2)
                 print(f'Do you want to perform operation on {result}\n')
                 while True:
