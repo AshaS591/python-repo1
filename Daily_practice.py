@@ -350,3 +350,9 @@ print(factorial(10))
 
 from math import floor
 print(floor(10.9))
+
+def demo(func):
+    return func
+fact=demo(factorial)
+res=fact(7)
+print(res)
