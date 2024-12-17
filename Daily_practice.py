@@ -57,41 +57,41 @@
 
 #Day 2
 #1. wap in which function takes another function an argument
-def add(num1,num2):
-    return num1+num2
-def diff(num1,num2):
-    return num1-num2
-def product(num1,num2):
-    return num1*num2
-def arithmetic(sum,product,diff,num1,num2):
-    return f"sum of {num1} and {num2} is {sum(num1,num2)}",f"Difference of {num1} and {num2} is {diff(num1,num2)}",f"product of {num1} and {num2} is {product(num1,num2)}"
-print(arithmetic(add,product,diff,10,40))
+# def add(num1,num2):
+#     return num1+num2
+# def diff(num1,num2):
+#     return num1-num2
+# def product(num1,num2):
+#     return num1*num2
+# def arithmetic(sum,product,diff,num1,num2):
+#     return f"sum of {num1} and {num2} is {sum(num1,num2)}",f"Difference of {num1} and {num2} is {diff(num1,num2)}",f"product of {num1} and {num2} is {product(num1,num2)}"
+# print(arithmetic(add,product,diff,10,40))
 
-#2 wap which is based on miscelleneous function
-def login(username,password):
-    name=input('Enter a name :')
-    if name==username:
-        print('valid username...')
-        pass_key=input('Enter a password :')
-        if pass_key==password:
-            print("Login succesfull...")
-        else:
-            count=0
-            while count<3:
-                pass_key=input('Enter a password :')
-                if pass_key==password:
-                     print("Login succesfull...")
-                     break
-                else:
-                    if count<2:
-                        print('Enter correct password...')
-                    else:
-                        print('Currently your account is blocked,Try after 24 hours')
-                count+=1     
-    else:
-        print('Invalid username')
-sign_in=login
-sign_in(username='Asha',password='asha@1405s')
+# #2 wap which is based on miscelleneous function
+# def login(username,password):
+#     name=input('Enter a name :')
+#     if name==username:
+#         print('valid username...')
+#         pass_key=input('Enter a password :')
+#         if pass_key==password:
+#             print("Login succesfull...")
+#         else:
+#             count=0
+#             while count<3:
+#                 pass_key=input('Enter a password :')
+#                 if pass_key==password:
+#                      print("Login succesfull...")
+#                      break
+#                 else:
+#                     if count<2:
+#                         print('Enter correct password...')
+#                     else:
+#                         print('Currently your account is blocked,Try after 24 hours')
+#                 count+=1     
+#     else:
+#         print('Invalid username')
+# sign_in=login
+# sign_in(username='Asha',password='asha@1405s')
 
 #3 wap using concept of kwargs(keyword arguments)
 # def voter_list(*ages,**names):
@@ -141,76 +141,131 @@ sign_in(username='Asha',password='asha@1405s')
 # voter_list(10,20,name1='asha',name2='anu')
 
 #1.categorize all vowels in a string
-char=input('enter a char')
-if char.isalpha():
-    if char in 'aeiouAEIOU':
-        list1=[]
-        list1.append(char)
-        print(list1)
-    else:
-        print(ord(char))
+# char=input('enter a char')
+# if char.isalpha():
+#     if char in 'aeiouAEIOU':
+#         list1=[]
+#         list1.append(char)
+#         print(list1)
+#     else:
+#         print(ord(char))
 
-#2 greatest among 3 numbers
-num1=int(input('enter num1 :'))
-num2=int(input('enter num2 :'))
-num3=int(input('enter num3 :'))
-if num1>num2:
-    if num1>num3:
-        print(f"{num1} is greatest")
-    else:
-        print(f"{num3} is greatest")
-else:
-    if num2>num3:
-        print(f"{num2} is greatest")
-    else:
-        print(f"{num3} is greatest")
+# #2 greatest among 3 numbers
+# num1=int(input('enter num1 :'))
+# num2=int(input('enter num2 :'))
+# num3=int(input('enter num3 :'))
+# if num1>num2:
+#     if num1>num3:
+#         print(f"{num1} is greatest")
+#     else:
+#         print(f"{num3} is greatest")
+# else:
+#     if num2>num3:
+#         print(f"{num2} is greatest")
+#     else:
+#         print(f"{num3} is greatest")
 
-#3. wap to check for leap year 
-year=304
-if year%4==0 and year%100!=0 or year%400==0:
-    print('leap year')
-else:
-    print("not")
+# #3. wap to check for leap year 
+# year=304
+# if year%4==0 and year%100!=0 or year%400==0:
+#     print('leap year')
+# else:
+#     print("not")
 
-#wap to print roots of a quadratic equation
-a=int(input('enter a:'))
-b=int(input('enter b:'))
-c=int(input('enter c:'))
-d=(b**2)- 4* a*c
-e=d**0.5
-root1=(-b+e)/2*a
-root2=(-b-e)/2*a
-print(f"Roots of {a}x^2{+(b)}x+{c} is {root1} and {root2}")
+# #wap to print roots of a quadratic equation
+# a=int(input('enter a:'))
+# b=int(input('enter b:'))
+# c=int(input('enter c:'))
+# d=(b**2)- 4* a*c
+# e=d**0.5
+# root1=(-b+e)/2*a
+# root2=(-b-e)/2*a
+# print(f"Roots of {a}x^2{+(b)}x+{c} is {root1} and {root2}")
 
-#wap to swap to numbers
-num1=int(input("enter a number 1: "))
-num2=int(input("enter a number 2: "))
-temp=num1
-num1=num2
-num2=temp
-print(f"the numbers after swaping are num1={num1},num2={num2}")
+# #wap to swap to numbers
+# num1=int(input("enter a number 1: "))
+# num2=int(input("enter a number 2: "))
+# temp=num1
+# num1=num2
+# num2=temp
+# print(f"the numbers after swaping are num1={num1},num2={num2}")
 
-#wap to swap to numbers without using temp variable
-num1=int(input("enter a number 1: "))
-num2=int(input("enter a number 2: "))
-num1=num1+num2
-num2=num1-num2
-num1=num1-num2
-print(f"the numbers after swaping are num1={num1},num2={num2} without using temp variable")
+# #wap to swap to numbers without using temp variable
+# num1=int(input("enter a number 1: "))
+# num2=int(input("enter a number 2: "))
+# num1=num1+num2
+# num2=num1-num2
+# num1=num1-num2
+# print(f"the numbers after swaping are num1={num1},num2={num2} without using temp variable")
 
-#wap to print no of vowels in string
-string=input('enter a sequence :')
-low=string.lower()
-a=low.count('a')
-e=low.count('e')
-i=low.count('i')
-o=low.count('o')
-u=low.count('u')
-print(f"count of vowels in {string} is {a+e+i+o+u}")
+# #wap to print no of vowels in string
+# string=input('enter a sequence :')
+# low=string.lower()
+# a=low.count('a')
+# e=low.count('e')
+# i=low.count('i')
+# o=low.count('o')
+# u=low.count('u')
+# print(f"count of vowels in {string} is {a+e+i+o+u}")
 
 
-# string palindrome progarame
-string=input('enter the word :')
-rev_str=string[::-1]
-if rev_str==string:
-    print('palindrome')
+# # string palindrome progarame
+# string=input('enter the word :')
+# rev_str=string[::-1]
+# if rev_str==string:
+#     print('palindrome')
+
+"""
+*
+* *
+* * *
+* * * *
+* * * * *
+
+"""
+for row in range(5):
+    for col in range(row+1):
+        if col<=row:
+            print('*',end=' ')
+    print()
+
+""" 
+1
+2 3
+4 5 6
+7 8 9 10
+
+"""
+count=0
+for row in range(7):
+    for col in range(row):
+        count+=1
+        print(count,end=' ')
+    print()
+
+"""
+1
+2 2
+3 3 3
+4 4 4 4
+"""
+count=0
+for row in range(5):
+    count+=1
+    for col in range(row+1):
+        print(count,end=' ')
+    print()
+
+'''
+1
+1 2
+1 2 3
+1 2 3 4
+1 2 3 4 5
+'''
+for row in range(5):
+    count=0
+    for col in range(row+1):
+        count+=1
+        print(count,end=' ')
+    print( )
