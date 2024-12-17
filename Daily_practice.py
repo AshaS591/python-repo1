@@ -305,4 +305,15 @@ for row in range(5):
         count-=1
     print()
 
-''''''
+'''
+* * * *
+* * *
+* *
+* * *
+* * * *
+'''
+for row in range(5):
+    for col in range(5):
+        if row+col<5 or  col<=row :
+            print('*',end=' ')
+    print()
