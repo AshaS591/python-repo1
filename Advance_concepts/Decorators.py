@@ -1,7 +1,7 @@
 # #########################################################################
 # def decorator(func_name):
 #     def wrapper(*args,**kwargs):
-#         print('Inside wrapper....')
+#         print('Executing wrapper....')
 #         for _ in range(3):
 #             print('-'*40)
 #             func_name()
@@ -147,3 +147,45 @@ math.add()
 math.product()
 math.division()
 math.difference()
+
+############################ Decorating a function with multiple Decorators ########################
+
+def deco1(func1):
+    def wrap1(*args,**kwargs):
+        print('*'*20)
+        print("Executing Wrap1")
+        func1(*args,**kwargs)
+        print("Executed wrap1")
+        print('*'*20)
+        
+    return wrap1
+
+def deco2(func2):
+    def wrap2(*args,**kwargs):
+        print('*'*20)
+        print("Executing Wrap2")
+        func2(*args,**kwargs)
+        print("Executed wrap2")
+        print('*'*20)
+
+    return wrap2
+
+def deco3(func3):
+    def wrap3(*args,**kwargs):
+        print('*'*20)
+        print("Executing Wrap3")
+        func3(*args,**kwargs)
+        print("Executed wrap3")
+        print('*'*20)
+    return wrap3
+
+@deco1
+@deco2
+@deco3
+def random():
+    print('#'*30)
+    print('Inside Random function')
+    print('#'*30)
+
+
+random()
