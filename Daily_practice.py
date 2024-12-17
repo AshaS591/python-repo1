@@ -331,3 +331,13 @@ for row in range(9):
         if row==0 or col==0 or row==9 or row+col<9 or row>=9//2:
             print("*",end=' ')
     print()
+
+
+# find factorial of a number using recursion
+def factorial(num):
+    if num==0 or num==1:
+        return 1
+    else:
+       return num*factorial(num-1)
+        
+print(factorial(6))
