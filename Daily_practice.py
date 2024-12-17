@@ -341,3 +341,6 @@ def factorial(num):
        return num*factorial(num-1)
         
 print(factorial(6))
+
+add=lambda num1,num2,num3:print(f'sum is {num1+num2+num3}') if (num1+num2+num3)%2==0 else print('sum is odd')
+add(10,20,30)
