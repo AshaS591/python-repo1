@@ -312,8 +312,22 @@ for row in range(5):
 * * *
 * * * *
 '''
-for row in range(5):
-    for col in range(5):
-        if row+col<5 or  col<=row :
+for row in range(10):
+    for col in range(10):
+        if row+col<10 or  col<=row :
             print('*',end=' ')
+    print()
+print()
+'''
+* * * * *
+* * * *
+* * * * *
+* * * * *
+* * * * * 
+'''
+
+for row in range(9):
+    for col in range(9):
+        if row==0 or col==0 or row==9 or row+col<9 or row>=9//2:
+            print("*",end=' ')
     print()
