@@ -114,39 +114,39 @@
 
 ######################## Function implimentation of class Decorator ###########################
 
-def method_decorator(func_name):
-    def wrapper(*args,**kwargs):
-        print(f"Executing {func_name.__name__}")
-        print(func_name(*args,**kwargs))
-        print(f"Executed {func_name.__name__}")
-    return wrapper
-def class_deco(cls_name):
+# def method_decorator(func_name):
+#     def wrapper(*args,**kwargs):
+#         print(f"Executing {func_name.__name__}")
+#         print(func_name(*args,**kwargs))
+#         print(f"Executed {func_name.__name__}")
+#     return wrapper
+# def class_deco(cls_name):
 
-    for name,address in cls_name.__dict__.items():
-        if callable(address):
-            setattr(cls_name,name,method_decorator(address))
-    return cls_name
+#     for name,address in cls_name.__dict__.items():
+#         if callable(address):
+#             setattr(cls_name,name,method_decorator(address))
+#     return cls_name
 
-@class_deco
-class MathOperations:
-    def __init__(self,num1,num2):
-        self.num1=num1
-        self.num2=num2
+# @class_deco
+# class MathOperations:
+#     def __init__(self,num1,num2):
+#         self.num1=num1
+#         self.num2=num2
        
-    def add(self):
-        return f"Sum of {self.num1} + {self.num2} = {self.num1+self.num2}"
-    def difference(self):
-        return f"Difference of {self.num1} - {self.num2} = {self.num1-self.num2}"
-    def product(self):
-        return f"product of {self.num1} X {self.num2} = {self.num1*self.num2}"
-    def division(self):
-        return f"Division of {self.num1} / {self.num2} = {self.num1/self.num2}"
+#     def add(self):
+#         return f"Sum of {self.num1} + {self.num2} = {self.num1+self.num2}"
+#     def difference(self):
+#         return f"Difference of {self.num1} - {self.num2} = {self.num1-self.num2}"
+#     def product(self):
+#         return f"product of {self.num1} X {self.num2} = {self.num1*self.num2}"
+#     def division(self):
+#         return f"Division of {self.num1} / {self.num2} = {self.num1/self.num2}"
         
-math=MathOperations(20,10)
-math.add()
-math.product()
-math.division()
-math.difference()
+# math=MathOperations(20,10)
+# math.add()
+# math.product()
+# math.division()
+# math.difference()
 
 ############################ Decorating a function with multiple Decorators ########################
 
