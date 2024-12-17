@@ -150,42 +150,42 @@
 
 ############################ Decorating a function with multiple Decorators ########################
 
-def deco1(func1):
-    def wrap1(*args,**kwargs):
-        print('*'*20)
-        print("Executing Wrap1")
-        func1(*args,**kwargs)
-        print("Executed wrap1")
-        print('*'*20)
+# def deco1(func1):
+#     def wrap1(*args,**kwargs):
+#         print('*'*20)
+#         print("Executing Wrap1")
+#         func1(*args,**kwargs)
+#         print("Executed wrap1")
+#         print('*'*20)
         
-    return wrap1
+#     return wrap1
 
-def deco2(func2):
-    def wrap2(*args,**kwargs):
-        print('*'*20)
-        print("Executing Wrap2")
-        func2(*args,**kwargs)
-        print("Executed wrap2")
-        print('*'*20)
+# def deco2(func2):
+#     def wrap2(*args,**kwargs):
+#         print('*'*20)
+#         print("Executing Wrap2")
+#         func2(*args,**kwargs)
+#         print("Executed wrap2")
+#         print('*'*20)
 
-    return wrap2
+#     return wrap2
 
-def deco3(func3):
-    def wrap3(*args,**kwargs):
-        print('*'*20)
-        print("Executing Wrap3")
-        func3(*args,**kwargs)
-        print("Executed wrap3")
-        print('*'*20)
-    return wrap3
+# def deco3(func3):
+#     def wrap3(*args,**kwargs):
+#         print('*'*20)
+#         print("Executing Wrap3")
+#         func3(*args,**kwargs)
+#         print("Executed wrap3")
+#         print('*'*20)
+#     return wrap3
 
-@deco1
-@deco2
-@deco3
-def random():
-    print('#'*30)
-    print('Inside Random function')
-    print('#'*30)
+# @deco1
+# @deco2
+# @deco3
+# def random():
+#     print('#'*30)
+#     print('Inside Random function')
+#     print('#'*30)
 
 
-random()
+# random()
