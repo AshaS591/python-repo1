@@ -291,3 +291,18 @@ for row in range(6,0,-1):
     for col in range(6):
         print(row,end=' ')
     print()
+
+'''
+9
+8 7
+6 5 4
+3 2 1 0
+'''
+count=9
+for row in range(5):
+    for col in range(row):
+        print(count,end=' ')
+        count-=1
+    print()
+
+''''''
