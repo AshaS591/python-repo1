@@ -347,3 +347,6 @@ add(10,20,30)
 
 from math import factorial
 print(factorial(10))
+
+from math import floor
+print(floor(10.9))
