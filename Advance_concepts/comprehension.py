@@ -60,5 +60,14 @@ except Exception as ree_msg:
 else:
     print(new_list)
 
+# 8. wap to create a list if item is string then reverse it and append to the list
+
+try:
+    items=eval(input("Enter a collection :"))
+    new_list=[item[::-1] for item in items if type(item)==str]
+except Exception as err_msg:
+    print(err_msg)
+else:
+    print(new_list)
 
     

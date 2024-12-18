@@ -274,6 +274,7 @@ def demo():
     print('Inside Demo.....')
 demo()
 print()
+
 # 2.
 class CountTracker:
     def __init__(self):
@@ -292,3 +293,6 @@ random()
 random()
 random()
 
+########################## class implementation of class decorator ########################
+
+# 1.
