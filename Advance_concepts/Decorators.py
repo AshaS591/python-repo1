@@ -261,3 +261,14 @@
 # chat.react()
     
 ####################### Class implementation of function decorator ########################
+class MyDeco:
+    def __call__(self, func_name):
+        def wrapper(*args,**kwargs):
+            print(f"Executing {func_name.__name__}.....")
+            func_name(*args,**kwargs)
+        return wrapper
+
+@MyDeco()
+def demo():
+    print('Inside Demo.....')
+demo()
