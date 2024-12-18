@@ -29,4 +29,12 @@ except Exception as err_msg:
 else:
     print(new_numbers)
 
+# 5. wap to create list with all integers 
 
+try:
+    numbers=eval(input('Enter a collection :')) 
+    new_list=[num for num in numbers if type(num)==int]
+except Exception as err_msg:
+    print(err_msg)
+else:
+    print(new_list)
