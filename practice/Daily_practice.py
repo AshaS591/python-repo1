@@ -1,3 +1,88 @@
+
+
+# #1.To print square of a number entered by user
+# num=int(input('enter a number :'))
+# square=num**2
+# print(f'Square of {num} is {square}')       
+
+# #2.To print cube of a number entered by user
+# num=int(input('enter a number :'))
+# cube=num**3
+# print(f'Cube of {num} is {cube}')
+
+# #3. To print last element from the list entered by user
+# user_list=eval(input('enter a list :'))
+# last_element=user_list[-1]
+# print(f"The last element of the user entered list is {last_element}")
+
+# #4.To print the element present in the index position entered by user
+# user_list=eval(input('enter a list :'))
+# index=int(input('enter a index :'))
+# print(f'element present in the index position entered by user is {user_list[index]}')
+
+# #5.To print the remove element present in the index position entered by user
+# user_list=eval(input('enter a list :'))
+# index=int(input('enter a index :'))
+# print(user_list.pop(index))
+
+# #6.To print the reverse of a word entered by user
+# word=input('enter a word :')
+# print(f"revere of {word} is {word[::-1]}")
+
+# #7.To perform basic mathematical operations on 2 no entered by the user and print result using print function
+# num1=int(input('enter first no :'))
+# num2=int(input('enter second no :'))
+# sum=num1+num2
+# diff=num1-num2
+# product=num1*num2
+# div=num1/num2
+# mod=num1%num2
+# floor=num1//num2
+# print(f"sum is {sum},diffrence is {diff},product is {product},true division is {div},mod is {mod},floor division is {floor}")
+
+# #8.wap to print sum of the  digits of a 3 digit number entered by the user
+# number=input('enter a number')
+# a,b,c=number[0],number[1],number[2]
+# sum=int(a)+int(b)+int(c)
+# print(sum)
+
+# # 34.Write a program to check whether the first value present inside the given list is complex or not.
+# items=eval(input('Enter a list of values :'))
+# if type(items[0])==complex:
+#     print(f"Datatype of {items[0]} is complex ")
+# else:
+#     print(f"Datatype of {items[0]} is not complex ")
+
+# #35.Write a program to take and consider a tuple collection consisting of only two values. Check whether the taken tuple is homogeneous or heterogeneous.
+# items=eval(input('Enter two items of a tuple :'))
+# if type(items[0])==type(items[1]):
+#     print(f"{items} is a homogeneous tuple")
+# else:
+#     print(f"{items} is a heterogeneous tuple")
+
+#36.Write a program to check whether the given integer number is multiple of 10 or not.
+number = int(input('Enter a number :'))
+if number%10==0:
+    print(f"{number} is multiple of 10")
+else:
+    print(f"{number} is not multiple of 10")
+
+#Write a program to check whether the given string is palindrome or not.
+string = input('Enter a string :')
+reverse=string[::-1]
+if reverse==string:
+    print(f"{string} is a palindrome...")
+else:
+    print(f"{string} is not a palindrome...")
+
+#39.Write a program to consider string input, if it is having more than three characters then print length of the string else print string as it is.
+string = input('Enter a string :')
+length=len(string)
+if length>3:
+    print(f"Length of the string {string} is {length} ")
+else:
+    print(f"string is {string}")
+    
 # # 21/11/2024 (every day five programs)
 # #1 wap to check whether a number is armstrong no or not using while loop
 # number=int(input('enter a number :'))
