@@ -112,7 +112,7 @@
 
 # palindrome()
 
-######################## Function implimentation of class Decorator ###########################
+# ####################### Function implimentation of class Decorator ###########################
 
 # def method_decorator(func_name):
 #     def wrapper(*args,**kwargs):
@@ -148,8 +148,8 @@
 # math.division()
 # math.difference()
 
-############################ Decorating a function with multiple Decorators ########################
-
+# ########################### Decorating a function with multiple Decorators ########################
+# 1)Decorating a function with multiple Decorators
 # def deco1(func1):
 #     def wrap1(*args,**kwargs):
 #         print('*'*20)
@@ -189,3 +189,40 @@
 
 
 # random()
+
+# 2)Decorating a function with multiple Decorators
+
+def deco1(func_name1):
+    def wrap1(*args,**kwargs):
+        print(f"Executing {func_name1.__name__}")
+        func_name1(*args,**kwargs)
+        print(f"Executed {func_name1.__name__}")
+    return wrap1    
+    
+
+def deco2(funcname):
+    def wrap2(*args,**kwargs):
+        print(f'Executing {funcname.__name__}')
+        funcname(*args,**kwargs)
+        print(f"Executed {funcname.__name__}")
+    return wrap2
+
+def deco3(func_name2):
+    def wrap3(*args,**kwargs):
+        print(f'Executing {func_name2.__name__}')
+        func_name2(*args,**kwargs)
+        print(f"Executed {func_name2.__name__}")
+    return wrap3
+
+@deco3
+@deco2
+@deco1
+def check_no_digits(num):
+    if num>0:
+        length=len(str(num))
+        print(f"Number of digits in {num} is {length}")
+    else:
+        length=len(str(num))-1
+        print(f"Number of digits in {num} is {length}")
+
+check_no_digits(-9990)
