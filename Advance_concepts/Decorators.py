@@ -112,41 +112,6 @@
 
 # palindrome()
 
-# ####################### Function implimentation of class Decorator ###########################
-
-# def method_decorator(func_name):
-#     def wrapper(*args,**kwargs):
-#         print(f"Executing {func_name.__name__}")
-#         print(func_name(*args,**kwargs))
-#         print(f"Executed {func_name.__name__}")
-#     return wrapper
-# def class_deco(cls_name):
-
-#     for name,address in cls_name.__dict__.items():
-#         if callable(address):
-#             setattr(cls_name,name,method_decorator(address))
-#     return cls_name
-
-# @class_deco
-# class MathOperations:
-#     def __init__(self,num1,num2):
-#         self.num1=num1
-#         self.num2=num2
-       
-#     def add(self):
-#         return f"Sum of {self.num1} + {self.num2} = {self.num1+self.num2}"
-#     def difference(self):
-#         return f"Difference of {self.num1} - {self.num2} = {self.num1-self.num2}"
-#     def product(self):
-#         return f"product of {self.num1} X {self.num2} = {self.num1*self.num2}"
-#     def division(self):
-#         return f"Division of {self.num1} / {self.num2} = {self.num1/self.num2}"
-        
-# math=MathOperations(20,10)
-# math.add()
-# math.product()
-# math.division()
-# math.difference()
 
 # ########################### Decorating a function with multiple Decorators ########################
 # 1)Decorating a function with multiple Decorators
@@ -192,37 +157,107 @@
 
 # 2)Decorating a function with multiple Decorators
 
-def deco1(func_name1):
-    def wrap1(*args,**kwargs):
-        print(f"Executing {func_name1.__name__}")
-        func_name1(*args,**kwargs)
-        print(f"Executed {func_name1.__name__}")
-    return wrap1    
+# def deco1(func_name1):
+#     def wrap1(*args,**kwargs):
+#         print(f"Executing {func_name1.__name__}")
+#         func_name1(*args,**kwargs)
+#         print(f"Executed {func_name1.__name__}")
+       
+#     return wrap1    
     
 
-def deco2(funcname):
-    def wrap2(*args,**kwargs):
-        print(f'Executing {funcname.__name__}')
-        funcname(*args,**kwargs)
-        print(f"Executed {funcname.__name__}")
-    return wrap2
+# def deco2(funcname):
+#     def wrap2(*args,**kwargs):
+#         print(f'Executing {funcname.__name__}')
+#         funcname(*args,**kwargs)
+#         print(f"Executed {funcname.__name__}")
+    
+#     return wrap2
 
-def deco3(func_name2):
-    def wrap3(*args,**kwargs):
-        print(f'Executing {func_name2.__name__}')
-        func_name2(*args,**kwargs)
-        print(f"Executed {func_name2.__name__}")
-    return wrap3
+# def deco3(func_name2):
+#     def wrap3(*args,**kwargs):
+#         print(f'Executing {func_name2.__name__}')
+#         func_name2(*args,**kwargs)
+#         print(f"Executed {func_name2.__name__}")
+#     return wrap3
 
-@deco3
-@deco2
-@deco1
-def check_no_digits(num):
-    if num>0:
-        length=len(str(num))
-        print(f"Number of digits in {num} is {length}")
-    else:
-        length=len(str(num))-1
-        print(f"Number of digits in {num} is {length}")
+# @deco3
+# @deco2
+# @deco1
+# def check_no_digits(num):
+#     if num>0:
+#         length=len(str(num))
+#         print(f"Number of digits in {num} is {length}")
+#     else:
+#         length=len(str(num))-1
+#         print(f"Number of digits in {num} is {length}")
 
-check_no_digits(-9990)
+# check_no_digits(-9990)
+# print()
+# ####################### Function implimentation of class Decorator ###########################
+# 1.
+# def method_decorator(func_name):
+#     def wrapper(*args,**kwargs):
+#         print(f"Executing {func_name.__name__}")
+#         print(func_name(*args,**kwargs))
+#         print(f"Executed {func_name.__name__}")
+#     return wrapper
+# def class_deco(cls_name):
+
+#     for name,address in cls_name.__dict__.items():
+#         if callable(address):
+#             setattr(cls_name,name,method_decorator(address))
+#     return cls_name
+
+# @class_deco
+# class MathOperations:
+#     def __init__(self,num1,num2):
+#         self.num1=num1
+#         self.num2=num2
+       
+#     def add(self):
+#         return f"Sum of {self.num1} + {self.num2} = {self.num1+self.num2}"
+#     def difference(self):
+#         return f"Difference of {self.num1} - {self.num2} = {self.num1-self.num2}"
+#     def product(self):
+#         return f"product of {self.num1} X {self.num2} = {self.num1*self.num2}"
+#     def division(self):
+#         return f"Division of {self.num1} / {self.num2} = {self.num1/self.num2}"
+        
+# math=MathOperations(20,10)
+# math.add()
+# math.product()
+# math.division()
+# math.difference()
+
+
+# 2.
+# from time import ctime
+# def display_invoked_time(func_name):
+#     def wrapper(*args,**kwargs):
+#         print(f"{func_name.__name__} is invoked at {ctime()}")
+#         func_name(*args,**kwargs)
+#         print()
+#     return wrapper
+
+# def meth_demo(cls_name):
+#     for name,address in cls_name.__dict__.items():
+#         if callable(address):
+#             setattr(cls_name,name,display_invoked_time(address))
+#     return cls_name
+
+# @meth_demo
+# class WhatsApp:
+#     def change_dp(self):
+#         print('Changing dp.....')
+#     def upload_status(self):
+#         print('Uploading status.....')
+#     def react(self):
+#         print('Reacting to a message.....')
+
+# chat=WhatsApp()
+# chat.change_dp()
+# chat.upload_status()
+# chat.react()
+    
+####################### Class implementation of function decorator ########################
