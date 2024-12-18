@@ -48,4 +48,17 @@ except Exception as err_msg:
     print(err_msg)
 else:
     print(new_list)
+
+# 7. wap to create a list where each item is word in sequence and convert to uppercase only if it contains only alphabet then append to the list
+
+sequence=input("Enter a sequence :")
+words=sequence.split()
+try:
+    new_list=[word.upper() for word in words if word.isalpha()]
+except Exception as ree_msg:
+    print(err_msg)
+else:
+    print(new_list)
+
+
     
