@@ -1,5 +1,3 @@
-
-
 # #1.To print square of a number entered by user
 # num=int(input('enter a number :'))
 # square=num**2
@@ -82,7 +80,7 @@ if length>3:
     print(f"Length of the string {string} is {length} ")
 else:
     print(f"string is {string}")
-    
+
 # # 21/11/2024 (every day five programs)
 # #1 wap to check whether a number is armstrong no or not using while loop
 # number=int(input('enter a number :'))
