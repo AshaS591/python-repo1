@@ -261,6 +261,7 @@
 # chat.react()
     
 ####################### Class implementation of function decorator ########################
+# 1.
 class MyDeco:
     def __call__(self, func_name):
         def wrapper(*args,**kwargs):
@@ -272,3 +273,22 @@ class MyDeco:
 def demo():
     print('Inside Demo.....')
 demo()
+print()
+# 2.
+class CountTracker:
+    def __init__(self):
+        self.count=0
+    def __call__(self, func_name):
+        def wrapper(*args,**kwargs):
+            func_name(*args,**kwargs)
+            self.count+=1
+            print(f"{func_name.__name__} is called for {self.count} time(s)")
+        return wrapper
+
+@CountTracker()   
+def random():
+    print('inside random function')
+random()
+random()
+random()
+
