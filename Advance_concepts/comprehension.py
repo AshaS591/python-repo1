@@ -1,5 +1,7 @@
 # ############ comprehension ##########
 
+#************************** list comprehension *****************************
+
 # # 1. wap to create numbers list by taking input from user using comprehension
 # end=int(input("Enter an endpoint :"))
 # numbers=[num for num in range(end+1)]
@@ -41,33 +43,45 @@
 
 # 6. wap to create a list ,if item is string datatye and item contains only alphabets and length is greaterthan 5
 
-try:
-    items=eval(input('Enter a collection which supports indexing :'))
-    new_list=[item for item in items if type(item)==str if item.isalpha() if len(item)>5]
-except Exception as err_msg:
-    print(err_msg)
-else:
-    print(new_list)
+# try:
+#     items=eval(input('Enter a collection which supports indexing :'))
+#     new_list=[item for item in items if type(item)==str if item.isalpha() if len(item)>5]
+# except Exception as err_msg:
+#     print(err_msg)
+# else:
+#     print(new_list)
 
 # 7. wap to create a list where each item is word in sequence and convert to uppercase only if it contains only alphabet then append to the list
 
-sequence=input("Enter a sequence :")
-words=sequence.split()
-try:
-    new_list=[word.upper() for word in words if word.isalpha()]
-except Exception as ree_msg:
-    print(err_msg)
-else:
-    print(new_list)
+# sequence=input("Enter a sequence :")
+# words=sequence.split()
+# try:
+#     new_list=[word.upper() for word in words if word.isalpha()]
+# except Exception as err_msg:
+#     print(err_msg)
+# else:
+#     print(new_list)
 
 # 8. wap to create a list if item is string then reverse it and append to the list
 
-try:
-    items=eval(input("Enter a collection :"))
-    new_list=[item[::-1] for item in items if type(item)==str]
-except Exception as err_msg:
-    print(err_msg)
-else:
-    print(new_list)
+# try:
+#     items=eval(input("Enter a collection :"))
+#     new_list=[item[::-1] for item in items if type(item)==str]
+# except Exception as err_msg:
+#     print(err_msg)
+# else:
+#     print(new_list)
 
-    
+# ***************************** Set Comprehension ***************************** 
+
+# 1.
+numbers={num  for num in range(10)}
+print(numbers)
+
+# 2.
+even_set={num for num in range(10) if num%2==0}
+print(even_set)
+
+# 3.
+odd_set={num for num in range(10) if num%2==1}
+print(odd_set)
