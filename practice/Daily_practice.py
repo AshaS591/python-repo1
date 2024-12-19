@@ -59,27 +59,27 @@
 #     print(f"{items} is a heterogeneous tuple")
 
 #36.Write a program to check whether the given integer number is multiple of 10 or not.
-number = int(input('Enter a number :'))
-if number%10==0:
-    print(f"{number} is multiple of 10")
-else:
-    print(f"{number} is not multiple of 10")
+# number = int(input('Enter a number :'))
+# if number%10==0:
+#     print(f"{number} is multiple of 10")
+# else:
+#     print(f"{number} is not multiple of 10")
 
-#Write a program to check whether the given string is palindrome or not.
-string = input('Enter a string :')
-reverse=string[::-1]
-if reverse==string:
-    print(f"{string} is a palindrome...")
-else:
-    print(f"{string} is not a palindrome...")
+# #Write a program to check whether the given string is palindrome or not.
+# string = input('Enter a string :')
+# reverse=string[::-1]
+# if reverse==string:
+#     print(f"{string} is a palindrome...")
+# else:
+#     print(f"{string} is not a palindrome...")
 
 #39.Write a program to consider string input, if it is having more than three characters then print length of the string else print string as it is.
-string = input('Enter a string :')
-length=len(string)
-if length>3:
-    print(f"Length of the string {string} is {length} ")
-else:
-    print(f"string is {string}")
+# string = input('Enter a string :')
+# length=len(string)
+# if length>3:
+#     print(f"Length of the string {string} is {length} ")
+# else:
+#     print(f"string is {string}")
 
 # # 21/11/2024 (every day five programs)
 # #1 wap to check whether a number is armstrong no or not using while loop
@@ -439,3 +439,26 @@ def demo(func):
 fact=demo(factorial)
 res=fact(7)
 print(res)
+
+'''
+A B C B A
+D E F E D
+G H I H G
+J K L K J
+M N O N M
+'''
+char=64
+temp=0
+for row in range(5):
+    for col in range(5):
+        if col<=5//2:
+            char+=1
+            print(chr(char),end=' ')
+            
+            temp=char
+        else:
+            temp-=1
+            print(chr(temp),end=' ')
+    print()
+
+
