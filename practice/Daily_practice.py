@@ -461,4 +461,30 @@ for row in range(5):
             print(chr(temp),end=' ')
     print()
 
+"""
+* * * * *
+* * * *
+* * *
+* *
+*
+"""
+for row in range(5):
+    for col in range(5,0,-1):
+        if col>row:
+            print('*',end=' ')
+    print()
 
+"""
+* * * * *
+  * * * *
+    * * *
+      * *
+        *
+"""
+for row in range(5):
+    for col in range(5):
+        if col<row:
+            print(' ',end=' ')
+        else:
+            print('*',end=' ')
+    print()
