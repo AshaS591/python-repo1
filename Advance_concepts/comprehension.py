@@ -72,6 +72,17 @@
 # else:
 #     print(new_list)
 
+# 9.
+nested=[[num for num in range(4) ] for num in range(5)]
+print(nested)
+
+#10.
+even_index_collection=[[num for num in range(3)] for num in range(10) if num%2==0]
+print(even_index_collection)
+
+#11.
+even_numbers_collection=[[num1 for num2 in range(3)] for num1 in range(10) if num1%2==0]
+print(even_numbers_collection)
 # ***************************** Set Comprehension ***************************** 
 
 # 1.
