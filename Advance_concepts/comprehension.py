@@ -94,3 +94,12 @@ print(squares_set)
 # 5.
 cube_set={num**3 for num in range(15)}
 print(cube_set)
+
+# 6. 
+squares_and_cubes={num**2 if num%2==0 else num**3 for num in range(10)}
+print(squares_and_cubes)
+
+# 7.
+string='collection'
+vowels={char for char in string if char in 'aeiouAEIOU'}
+print(vowels)
