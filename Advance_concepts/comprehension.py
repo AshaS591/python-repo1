@@ -85,3 +85,8 @@ print(even_set)
 # 3.
 odd_set={num for num in range(10) if num%2==1}
 print(odd_set)
+
+# 4
+number=int(input('Enter number :'))
+squares_set={num**2 for num in range(number)}
+print(squares_set)
