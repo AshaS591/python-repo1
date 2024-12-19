@@ -329,3 +329,44 @@ math.add()
 math.product()
 math.div()
 math.diff()
+
+# 2.
+class Decorator:
+    def __call__(self, address):
+        def wrapper(*args,**kwargs):
+            print(f"Executing {address.__name__}")
+            address(*args,**kwargs)
+            print(f"Executed {address.__name__}")
+        return wrapper
+class Cls_Decorator:
+    def __call__(self, cls_address):
+        for name,address in cls_address.__dict__.items():
+            if callable(address):
+                obj=Decorator()
+                setattr(cls_address,name,obj(address))
+        return cls_address
+
+@Cls_Decorator()
+class Methods:
+    def __init__(self,num):
+        self.num=num
+    def factorial(self):
+        fact=1
+        for number in range(1,self.num+1):
+            fact*=number
+        print(f'Factorial of {self.num} is {fact}')
+
+    def armstrong(self):
+        length=len(str(self.num))
+        temp=self.num
+        arms=0
+        for _ in range(1,self.num+1):
+            last_digit=self.num%10
+            arms+=(last_digit**length)
+            self.num//=10
+        print(f"Armstrong number of {temp}: {arms}")
+method=Methods(12)
+method.factorial()
+method.armstrong()
+    
+        
