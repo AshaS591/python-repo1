@@ -6,3 +6,8 @@ print(res)
 def details(name,age):
     print(f"Name :{name},Age :{age}")
 details(20,'asha')
+
+def login(user_name,password):
+    return f"User name is : {user_name},password is {password}"
+res=login(1234,'ashas')
+print(res)
