@@ -103,3 +103,8 @@ print(squares_and_cubes)
 string='collection'
 vowels={char for char in string if char in 'aeiouAEIOU'}
 print(vowels)
+
+# 8.
+collection=['artist',True,90,'actor','drama',0,9.23,'role','director']
+strings={item for item in collection if type(item)==str}
+print(strings)
