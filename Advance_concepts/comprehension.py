@@ -90,3 +90,7 @@ print(odd_set)
 number=int(input('Enter number :'))
 squares_set={num**2 for num in range(number)}
 print(squares_set)
+
+# 5.
+cube_set={num**3 for num in range(15)}
+print(cube_set)
