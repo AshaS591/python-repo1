@@ -365,8 +365,8 @@ class Methods:
             arms+=(last_digit**length)
             self.num//=10
         print(f"Armstrong number of {temp}: {arms}")
-method=Methods(12)
+method=Methods(23)
 method.factorial()
 method.armstrong()
     
-        
+       
