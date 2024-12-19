@@ -296,3 +296,36 @@ random()
 ########################## class implementation of class decorator ########################
 
 # 1.
+class Decorator:
+    def __call__(self, address):
+        def wrapper(*args,**kwargs):
+            print(f'Executing {address.__name__}')
+            address(*args,**kwargs)
+        return wrapper
+
+class ClsDecorator:
+    def __call__(self, cls_name):
+        for name,address in cls_name.__dict__.items():
+            if callable(address):
+                obj=Decorator()
+                setattr(cls_name,name,obj(address))
+        return cls_name
+        
+@ClsDecorator()
+class MathOperations:
+    def __init__(self,num1,num2):
+        self.num1=num1
+        self.num2=num2
+    def add(self):
+        print('Sum is',self.num1+self.num2 )
+    def diff(self):
+        print('Difference is',self.num1-self.num2 )
+    def product(self):
+        print('Product is',self.num1*self.num2 )
+    def div(self):
+        print('Division is',self.num1/self.num2 )
+math=MathOperations(20,10)
+math.add()
+math.product()
+math.div()
+math.diff()
