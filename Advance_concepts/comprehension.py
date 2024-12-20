@@ -129,3 +129,17 @@ print(strings)
 #                    Dictionary Comprehension
 #************************************************************************
 
+# 1.wap to create dictionary using two collections(which supports indexing)
+
+names=['asha','shashi','abhi','rishi']
+age=(21,24,24,23)
+user_details={key:value for key,value in zip(names,age)}
+print(user_details)
+
+# 2.wap ro create a dictionary using two collections(which supports indexing) if key is string datatype then concat with some additional characters
+
+laptops=['Dell','HP','Lenevo','Asus']
+versions=['i5','i3','i7','i3']
+
+collection={key+' laptop':value  for key,value in zip(laptops,versions) if type(key)==str}
+print(collection)
