@@ -1,5 +1,7 @@
 ###########################################################
 
+""" Miscelleneous functions are the functions in which function addess/name stored in a another variable so that variable can be called """
+
 def display():
     print("This is miscelleneous function....")
 function=display
