@@ -1,6 +1,7 @@
 # ############ comprehension ##########
 
 #************************** list comprehension *****************************
+#****************************************************************************
 
 # # 1. wap to create numbers list by taking input from user using comprehension
 # end=int(input("Enter an endpoint :"))
@@ -72,50 +73,59 @@
 # else:
 #     print(new_list)
 
-# 9.
+# 9.Wap to create nested list in the range of 4
 nested=[[num for num in range(4) ] for num in range(5)]
 print(nested)
 
-#10.
+#10.wap to create a nested even_index_collection 
 even_index_collection=[[num for num in range(3)] for num in range(10) if num%2==0]
 print(even_index_collection)
 
-#11.
+#11.wap to create a nested even_numbers_collection
 even_numbers_collection=[[num1 for num2 in range(3)] for num1 in range(10) if num1%2==0]
 print(even_numbers_collection)
-# ***************************** Set Comprehension ***************************** 
 
-# 1.
+
+# ***************************** Set Comprehension ***************************** 
+#******************************************************************************
+
+# 1.wap to create set with numbers in the range of 10
 numbers={num  for num in range(10)}
 print(numbers)
 
-# 2.
+# 2.wap to create set with even numbers
 even_set={num for num in range(10) if num%2==0}
 print(even_set)
 
-# 3.
+# 3.wap to create set with odd numbers
 odd_set={num for num in range(10) if num%2==1}
 print(odd_set)
 
-# 4
+# 4.wap to create set with square of numbers
 number=int(input('Enter number :'))
 squares_set={num**2 for num in range(number)}
 print(squares_set)
 
-# 5.
+# 5.wap to create set with square of numbers
 cube_set={num**3 for num in range(15)}
 print(cube_set)
 
-# 6. 
+# 6. wap to create set if number is add square of that number ,if number is odd add cube of that number
 squares_and_cubes={num**2 if num%2==0 else num**3 for num in range(10)}
 print(squares_and_cubes)
 
-# 7.
+# 7.wap to create set with vowels character
 string='collection'
 vowels={char for char in string if char in 'aeiouAEIOU'}
 print(vowels)
 
-# 8.
+# 8.wap to create set from the collection based on the datatype of an item,if type of item is string add it set
 collection=['artist',True,90,'actor','drama',0,9.23,'role','director']
 strings={item for item in collection if type(item)==str}
 print(strings)
+
+
+#***********************************************************************
+#                    Dictionary Comprehension
+#************************************************************************
+
