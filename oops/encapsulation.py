@@ -1,3 +1,10 @@
+'''
+    Encapsulation is a process of binding the data into a single entity
+    
+    * it is achieved by using access specifiers
+    * Underscore inside a class is called access specifier
+'''
+
 class student:
     degree='btech'
     __yop=2024
