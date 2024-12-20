@@ -502,3 +502,19 @@ for row in range(5):
         print(chr(char),end=' ')
     print()
     char+=1
+
+"""
+A B C D E
+A B C D E
+A B C D E
+A B C D E
+A B C D E
+"""
+print()
+for row in range(5):
+    char=65
+    for col in range(5):
+        print(chr(char),end=' ')
+        char+=1
+    print()
+print()
