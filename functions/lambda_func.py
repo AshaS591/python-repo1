@@ -1,3 +1,6 @@
+''' Lambda functions are simple and single line functions
+    * used for simple if else conditions'''
+
 even_or_odd=lambda num:'even' if num%2==0 else "odd"
 print(even_or_odd(20))
 

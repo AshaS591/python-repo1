@@ -2,7 +2,7 @@
     * mutable
     * stores homogeneous and heterogeneous elements
     * supports slicing and indexing
-    * ordered collection'''
+    * ordered collection '''
 
 collection=[]
 for num in range(10):
