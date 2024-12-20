@@ -26,3 +26,8 @@ factorial_num=factorial
 factorial_num(5)
 
 ################################################################
+
+def user_info(name,age):
+    print(f'Name is {name} and age is {age}')
+details=user_info
+details('Asha',21)
