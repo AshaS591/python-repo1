@@ -538,3 +538,10 @@ string='Count the number of spaces in a string'
 count=0
 spaces_count=sum([count+1 for char in string if char==' '])
 print(f'Count of spaces in {string} is {spaces_count}')
+
+'''
+Create a list of all the consonants in the string “Yellow Yaks like yelling and yawning and yesturday they yodled while eating yuky yams”
+'''
+string='Yellow Yaks like yelling and yawning and yesturday they yodled while eating yuky yams'
+consonants=[char for char in string if char not in 'AEIOUaeiou']
+print(consonants)
