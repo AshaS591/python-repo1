@@ -520,5 +520,11 @@ for row in range(5):
 print()
 
 '''
+Find all of the numbers from 1-1000 that are divisible by 7
+'''
+numbers=[num for num in range(0,1000,7)]
+print(numbers)
 
+'''
+Find all of the numbers from 1-1000 that have a 3 in them
 '''
