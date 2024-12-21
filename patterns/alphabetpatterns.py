@@ -1,34 +1,34 @@
-# n=int(input('enter number :'))
-# for row in range(n):
-#     char='A'
-#     for col in range(n):
-#         print(char,end=' ')
-#         char=chr(ord(char)+1)
-#     print()
+n=int(input('enter number :'))
+for row in range(n):
+    char='A'
+    for col in range(n):
+        print(char,end=' ')
+        char=chr(ord(char)+1)
+    print()
 
-# n=int(input('enter number :'))
-# for row in range(n):
-#     char='A'
-#     for col in range(row):
-#         print(char,end=' ')
-#         char=chr(ord(char)+1)
-#     print()
+n=int(input('enter number :'))
+for row in range(n):
+    char='A'
+    for col in range(row):
+        print(char,end=' ')
+        char=chr(ord(char)+1)
+    print()
 
-# n=int(input('enter number :'))
-# char='A'
-# for row in range(n):
-#     for col in range(n):
-#         print(char,end=' ')   
-#     print()
-#     char=chr(ord(char)+1)
+n=int(input('enter number :'))
+char='A'
+for row in range(n):
+    for col in range(n):
+        print(char,end=' ')   
+    print()
+    char=chr(ord(char)+1)
 
-# n=int(input('enter number :'))
-# char='A'
-# for row in range(n):
-#     for col in range(row+1):
-#         print(char,end=' ')   
-#     print()
-#     char=chr(ord(char)+1)
+n=int(input('enter number :'))
+char='A'
+for row in range(n):
+    for col in range(row+1):
+        print(char,end=' ')   
+    print()
+    char=chr(ord(char)+1)
 
 n=int(input('enter number :'))
 char='A'
