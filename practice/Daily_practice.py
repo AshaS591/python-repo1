@@ -582,3 +582,9 @@ string='Find all of the words in a string that are less than 4 letters'
 words=string.split()
 new_words=[word for word in words if len(word)<4]
 print(new_words)
+
+'''
+Use a nested list comprehension to find all of the numbers from 1-1000 that are divisible by any single digit besides 1 (2-9)
+'''
+nested_list=[[num for num in range(1,100) if num%number==0]for number in range(2,10)]
+print(nested_list)
