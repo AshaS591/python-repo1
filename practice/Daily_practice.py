@@ -565,4 +565,6 @@ print(common_elements)
 Get only the numbers in a sentence like ‘In 1984 there were 13 instances of a protest with over 1000 people attending’
 '''
 sentence='In 1984 there were 13 instances of a protest with over 1000 people attending'
-list
+list_numbers=sentence.split()
+digits=[int(number) for number in list_numbers if number.isnumeric()]
+print(digits)
