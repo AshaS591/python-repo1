@@ -568,3 +568,9 @@ sentence='In 1984 there were 13 instances of a protest with over 1000 people att
 list_numbers=sentence.split()
 digits=[int(number) for number in list_numbers if number.isnumeric()]
 print(digits)
+
+'''
+Given numbers = range(20), produce a list containing the word ‘even’ if a number in the numbers is even, and the word ‘odd’ if the number is odd. Result would look like ‘odd’,’odd’, ‘even’
+'''
+output=['even' if num%2==0 else 'odd' for num in range(20)]
+print(output)
