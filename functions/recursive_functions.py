@@ -122,6 +122,17 @@ def extract_lowercase_char(string,index=0,lower=''):
     return lower
 print(extract_lowercase_char('MadHYapRaDeSH'))
 
+'''
+10. wap to find gcd of two numbers
+
+'''
+def gcd(a,b):
+    if b==0:
+        return a
+    else:
+        return gcd(b,a%b)
+print(gcd(2,6) ) 
+
 # 10.wap to display a dictionary whose keys are words of a sentence  and the values are the length of each word 
 
 
