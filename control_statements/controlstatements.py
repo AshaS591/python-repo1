@@ -4,6 +4,7 @@
 #3.pass
 
 #1.wap to check if the collection is homogeneous collection or not --(ASHA S)
+
 collection = eval(input("Enter a collection :"))
 homogeneous = True
 type_ref = type(collection[0])
@@ -17,6 +18,7 @@ else:
     print(f"{collection} is heterogeneous collection")
 
 #2.wap to check if the given number is prime or not --(ASHA S)
+
 num = int(input('Enter a number :'))
 if num==1:
     print(f"{num} is not a prime")
@@ -34,6 +36,7 @@ else:
     print(f"{num} is not a prime")
 
 #3.wap to validate usrename and password using while loop and for loop --(ASHA S)
+
 actual_username=input('Enter username :')
 actual_password=input('Enter password :')
 while True:
@@ -49,6 +52,7 @@ else:
 
 
 # #4.wap to check if the string consists only lowercase letters --(ASHA S)
+
 string=input("Enter a string :")
 lower=True
 for char in string:
@@ -61,6 +65,7 @@ else:
     print(f"{string} contains otherthan lowercase characters")
 
 # #5.wap to check if the number consists only digits
+
 num=input('Enter a number :')
 number=True
 for digit in num:
@@ -73,6 +78,7 @@ else:
     print(f"{num} contains otherthan digits...")
 
 #6.wap to check if the string consists only alphabets --(ASHA S)
+
 string=input("Enter a string :")
 alpha=True
 for char in string:
@@ -85,6 +91,7 @@ else:
     print(f"{string} contains otherthan alphabets")
 
 #7.wap to check if the string consists only uppercase letters --(ASHA S)
+
 string=input("Enter a string :")
 upper=True
 for char in string:
