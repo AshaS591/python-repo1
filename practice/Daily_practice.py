@@ -574,3 +574,11 @@ Given numbers = range(20), produce a list containing the word ‘even’ if a nu
 '''
 output=['even' if num%2==0 else 'odd' for num in range(20)]
 print(output)
+
+'''
+Find all of the words in a string that are less than 4 letters
+'''
+string='Find all of the words in a string that are less than 4 letters'
+words=string.split()
+new_words=[word for word in words if len(word)<4]
+print(new_words)
