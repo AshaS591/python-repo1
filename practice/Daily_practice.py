@@ -528,3 +528,13 @@ print(numbers)
 '''
 Find all of the numbers from 1-1000 that have a 3 in them
 '''
+numbers=[num for num in range(1,1000) if str(3) in str(num)]
+print(numbers)
+
+'''
+Count the number of spaces in a string
+'''
+string='Count the number of spaces in a string'
+count=0
+spaces_count=sum([count+1 for char in string if char==' '])
+print(f'Count of spaces in {string} is {spaces_count}')
