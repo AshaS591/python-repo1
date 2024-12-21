@@ -143,8 +143,19 @@ def list_sum(list1,out=0,start=0):
         return list_sum(list1,out+list1[start],start+1)
 print(list_sum([10,20,30,90]))
 
-
-
+'''
+recursive function that checks whether a given string is a palindrome
+'''
+def palindrome(string,reverse='',start=0):
+    if start==len(string):
+        return reverse
+    else:
+        return palindrome(string,string[start]+reverse,start+1)
+    
+string='appa'
+new_str=palindrome(string)
+if new_str==string:
+    print('Palindrome....')
 
 
 
