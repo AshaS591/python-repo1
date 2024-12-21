@@ -136,15 +136,15 @@
 '''
 11. Write a Python Program to Calculate the Sum of a list with Recursion
 '''
-def list_sum(list1,out=0,start=0):
-    if start==len(list1):
+def list_sum(lst,out=0,start=0):
+    if start==len(lst):
         return out
     else:
-        return list_sum(list1,out+list1[start],start+1)
+        return list_sum(lst,out+lst[start],start+1)
 print(list_sum([10,20,30,90]))
 
 '''
-recursive function that checks whether a given string is a palindrome
+12. Recursive function that checks whether a given string is a palindrome
 '''
 def palindrome(string,reverse='',start=0):
     if start==len(string):
@@ -157,5 +157,16 @@ new_str=palindrome(string)
 if new_str==string:
     print('Palindrome....')
 
+'''
+13. Recursive function that takes a list of numbers and returns the smallest value
+'''
+def smallest_value(lst):
+    if len(lst)==1:
+        return lst[0]
+    else:
+        return min(lst[0],smallest_value(lst[1:]))
+    
+smallest=smallest_value([10,20,2,90])
+print(smallest)
 
 
