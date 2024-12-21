@@ -12,3 +12,5 @@ print(math.cbrt(27))
 print(math.sqrt(100))
 
 print(math.fabs(-90))
+
+print(math.ceil(10.2))
