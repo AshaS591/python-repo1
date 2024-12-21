@@ -552,3 +552,16 @@ Get the index and the value as a tuple for items in the list 'hi', 4, 8.99, 'app
 items=['hi', 4, 8.99, 'apple', ('t','b','n')]
 new_items=[(items.index(item),item) for item in items ]
 print(new_items)
+
+'''
+Find the common numbers in two lists (without using a tuple or set) list_a = 1, 2, 3, 4, list_b = 2, 3, 4, 5
+'''
+list_a=[1, 2, 3, 4]
+list_b=[2, 3, 4, 5]
+common_elements=[item for item in list_a if item in list_b]
+print(common_elements)
+
+'''
+Get only the numbers in a sentence like ‘In 1984 there were 13 instances of a protest with over 1000 people attending’
+'''
+sentence='In 1984 there were 13 instances of a protest with over 1000 people attending'
