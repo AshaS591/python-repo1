@@ -14,3 +14,5 @@ print(math.sqrt(100))
 print(math.fabs(-90))
 
 print(math.ceil(10.2))
+
+print(math.fsum([90,78]))
