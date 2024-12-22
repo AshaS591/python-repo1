@@ -38,3 +38,23 @@ class Advance(Python):
 python=Advance()
 python.welcome_msg()
 python.advance_topics()
+
+class Numbers(ABC):
+
+    @abstractmethod
+    def factorial(self,num):
+        print('Inside factorial method...')
+
+class WholeNumbers(Numbers):
+    def positive_number(self,num):
+        if num>0:
+            print('Positive number...')
+    def factorial(self, num):
+        fact=1
+        for number in range(1,num+1):
+            fact*=number
+        print(f'Factorial of {num} is {fact}')
+
+num=WholeNumbers()
+num.factorial(7)
+num.positive_number(10)
