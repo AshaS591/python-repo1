@@ -49,3 +49,20 @@ set1={12,23}
 # print(set1)  unsupported operand type(s) for +=: 'set' and 'set'
 
 ##############################################################################################
+
+''' -= '''  
+'''supports single valued datatype and set datatype(performs set difference)'''
+
+'''-= on numbers '''
+num1=10
+num1-=5 # => num1=num1-5
+print(num1) #5
+
+'''-= in bool'''
+fare=True
+fare-=1
+print(fare) #0
+
+set1={1,2,3,4}
+set1-={2,5,6}
+print(set1) #{1, 3, 4}
