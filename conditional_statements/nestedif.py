@@ -63,3 +63,14 @@ if number%2==0:
             print(f'Square of {number} is {number**2}')
         else:
             print(f"Number is {number}")
+
+#Program to consider an input string. Print the string as it is if it is palindrome. Print the reverse string if it has an even number of characters. Print all the characters present at an odd index if the string is having an odd number of characters.
+
+string=input('Enter a string :')
+reverse=string[::-1]
+if reverse==string:
+    print(string)
+    if len(string)%2==0:
+        print(reverse)
+    else:
+        print(string[1::2])
