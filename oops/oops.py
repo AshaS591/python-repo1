@@ -53,3 +53,29 @@ class Circle:
 c1=Circle()
 c1.area(10)
 c1.peimeter(20)
+
+######################################################################
+print()
+
+class ArithmeticOperations:
+    print('Performing Arithmetic Operations:')
+    def __init__(self,num1,num2):
+        self.num1=num1
+        self.num2=num2
+    def add(self):
+        print(f'{self.num1} + {self.num2} = {self.num1+self.num2}')
+    def diff(self):
+        print(f'{self.num1} - {self.num2} = {self.num1-self.num2}')
+    def product(self):
+        print(f'{self.num1} * {self.num2} = {self.num1*self.num2}')
+    def div(self):
+        print(f'{self.num1} / {self.num2} = {self.num1/self.num2}')
+    def mod(self):
+        print(f'{self.num1} % {self.num2} = {self.num1%self.num2}')
+math=ArithmeticOperations(20,10)
+math.add()
+math.diff()
+math.div()
+math.product()
+math.mod()
+        
