@@ -123,3 +123,16 @@ elif experiance>2 and experiance<=5:
 else:
     bonus=(salary*25)/100
     print(f"your bonus is {bonus}")
+
+#9. Write a program to accept percentages from the user and display the grade according to the following criteria. If marks is greater than 90, grade is A. If marks is greater than 80 and less than equals to 90, gra inde is B if marks is greater than or equal to 60, and less than equals to 80 grade is C, else if it is less than 60 grade is D
+
+percentage=int(input('Enter your percentage  :'))
+if 100>=marks>90:
+    print(' A grade')
+elif 90>=marks>80:
+    print('B grade')
+elif 80>=marks>=60:
+    print('C grade')
+elif marks<60:
+    print('D grade')
+
