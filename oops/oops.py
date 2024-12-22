@@ -12,9 +12,44 @@ house1.doors=7
 print(house1.doors)
 house1.colors(10)
 
-class colors:
+###########################################################
+
+class Colors:
     color1='black'
     color2='white'
     color3='pink'
-    def display_color(self,):
-        pass
+    def dis_colors(self):
+        print(Colors.__dict__)
+color=Colors()
+color.dis_colors()  
+
+##############################################################
+
+class Person:
+    name='Asha S'
+    country='India'
+    dob="14/01/2003"
+    def __init__(self,age):
+        self.age=age
+    def display_details(self):
+        print(f'Name : {Person.name}\nCountry : {Person.country}\nDOB : {Person.dob}\nAge : {self.age}')
+asha=Person(21)
+print(asha.__dict__)
+print(Person.__dict__)
+asha.display_details()
+
+#############################################################################
+        
+class Circle:
+    def area(self,radius):
+        self.pi=3.14
+        self.radius=radius
+        self.area= self.pi * (self.radius**2)
+        print(f'Area of circle with radius {self.radius} is {self.area}')
+    def peimeter(self,radius):
+        self.rad=radius
+        self.peimeter=2 * self.pi * self.rad
+        print(f'Perimeter of circle with radius {self.rad} is {self.peimeter}')
+c1=Circle()
+c1.area(10)
+c1.peimeter(20)
