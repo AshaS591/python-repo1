@@ -1,4 +1,5 @@
 ''' Assignment Operators '''
+""" += ,-= ,*= ,/= ,%= ,//= """
 
 '''+= on numbers'''
 num=10
@@ -8,6 +9,10 @@ print(num) #40
 num2=9.9
 num2+=2.8
 print(num2) #12.7
+
+complex1=2+3j
+complex1+=1+9j
+print(complex1) #(3+12j)
 
 '''+= on strings'''
 name='Asha'
@@ -24,3 +29,6 @@ numbers=(10,20,90)
 numbers+=(30,70) #performs concatenation
 print(numbers) #(10, 20, 90, 30, 70)
 
+info={'name':'asha'}
+# info+={'age':21}
+# print(info) unsupported operand type(s) for +=: 'dict' and 'dict'
