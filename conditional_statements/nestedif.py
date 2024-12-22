@@ -41,4 +41,14 @@ if number.is_integer():
 else:
     print("not a number")
 
+# Write a program to create an Instagram login page.
+username=input('Enter username :')
+password=input('Enter password :')
+if username=='Asha@123':
+    if password=='@123asha':
+        print('Login successful...')
+    else:
+        print('Wrong password...!')
+else:
+    print('Invalid Username...')
 
