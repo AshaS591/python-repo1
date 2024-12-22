@@ -12,6 +12,8 @@ print(animal.name)
 animal.blood_type()
 animal.heart_chambers()
 
+################################################################################
+
 class Shapes:
     def area(self):
         print('This is Area method...')
