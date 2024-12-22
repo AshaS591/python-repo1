@@ -59,9 +59,14 @@ num1-=5 # => num1=num1-5
 print(num1) #5
 
 '''-= in bool'''
-fare=True
-fare-=1
+fare=True # 1
+fare-=1 # 1-1
 print(fare) #0
+
+''' -= on complex datatype'''
+complex1=10+2j
+complex1-=2+1j
+print(complex1) #(8+1j)
 
 set1={1,2,3,4}
 set1-={2,5,6}
