@@ -136,3 +136,11 @@ elif 80>=marks>=60:
 elif marks<60:
     print('D grade')
 
+#10. Accept any city from the user and display monuments of that city. For Delhi it is Red Fort, Agra- Taj Mahal, Jaipur- Jal Mahal.
+city=input('Enter any city :')
+if city=='Delhi':
+    print('Monuments of delhi is Red Fort')
+elif city=='Agra':
+    print('Monuments of Agra is Taj Mahal ')
+elif city=='Jaipur':
+    print('Monuments of Jaipur is Jal Mahal ')
