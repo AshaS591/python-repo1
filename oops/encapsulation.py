@@ -25,7 +25,7 @@ s1.setAge(22)
 print(s1.getAge())
 # print()
  
-
+#######################################################################
 
 class student:
     college='presidency'
@@ -46,6 +46,7 @@ object.get_Age()
 print(student._student__rollno)
 print(object._student__rollno)
 
+########################################################################
 
 class student:
     college='presidency'
@@ -68,3 +69,6 @@ object=student('asha',21,'cse')
 object.Age
 print(student.__dict__)
 print(object.__dict__)
+
+############################################################################
+
