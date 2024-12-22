@@ -52,25 +52,32 @@
 # else:
 #     print('Invalid Username...')
 
-#Write a program to consider an integer number. Print happy if the number is divisible by two. Print SAD if the number is divisible by 5 and print square of the numbers only if it is divisible by seven else print the number as it is.
+# #Write a program to consider an integer number. Print happy if the number is divisible by two. Print SAD if the number is divisible by 5 and print square of the numbers only if it is divisible by seven else print the number as it is.
 
-number=int(input('Enter a number :'))
-if number%2==0:
-    print('Even')
-    if number%5==0:
-        print('SAD')
-        if number%7==0:
-            print(f'Square of {number} is {number**2}')
-        else:
-            print(f"Number is {number}")
+# number=int(input('Enter a number :'))
+# if number%2==0:
+#     print('Even')
+#     if number%5==0:
+#         print('SAD')
+#         if number%7==0:
+#             print(f'Square of {number} is {number**2}')
+#         else:
+#             print(f"Number is {number}")
 
-#Program to consider an input string. Print the string as it is if it is palindrome. Print the reverse string if it has an even number of characters. Print all the characters present at an odd index if the string is having an odd number of characters.
+# #Program to consider an input string. Print the string as it is if it is palindrome. Print the reverse string if it has an even number of characters. Print all the characters present at an odd index if the string is having an odd number of characters.
 
-string=input('Enter a string :')
-reverse=string[::-1]
-if reverse==string:
-    print(string)
-    if len(string)%2==0:
-        print(reverse)
-    else:
-        print(string[1::2])
+# string=input('Enter a string :')
+# reverse=string[::-1]
+# if reverse==string:
+#     print(string)
+#     if len(string)%2==0:
+#         print(reverse)
+#     else:
+#         print(string[1::2])
+
+#Write a program to print middle Character.Given string only if it is upper case character.
+string=input("Enter uppercase string :")
+length=len(string)
+if string.isalpha():
+    if string[length//2].isupper():
+        print(string[length//2])
