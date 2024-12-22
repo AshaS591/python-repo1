@@ -20,6 +20,9 @@ if 'a'<=char<='z' or 'A'<=char<='Z' or "0"<=char<="9":
     print(f"{char} is not special character")
 else :
     print(f"{char} is  special character")
+
+##############################################################################
+
 #3.wap to check if user entered no is +ve or -ve
 num=int(input("enter a number :"))
 if num>=0:
