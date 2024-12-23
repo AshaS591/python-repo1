@@ -383,3 +383,15 @@ while num<=10:
     num+=1
 avg=sum(numbers)/len(numbers)
 print(f'Aerage of {numbers} is {avg}')
+
+#34.Write a program to accept 10 numbers from the user and display the largest & smallest number number.
+num=1
+numbers=[]
+while num<=10:
+    number=int(input('Enter number :'))
+    numbers.append(number)
+    num+=1
+minimum_no=min(numbers)
+maximum_no=max(numbers)
+print(f' Minimum number among {numbers} is {minimum_no}')
+print(f' Maximum number among {numbers} is {maximum_no}')
