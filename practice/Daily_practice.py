@@ -612,7 +612,7 @@ series=''
 end=int(input('Enter ending point :'))
 while start<=end:
     
-    series+=f'{}'
+    series+=f'{start*(start+1)}'
    
     start+=1
     if start<end:
