@@ -117,3 +117,4 @@ dict1={'a':10,'b':20}
 #dict1*=2 unsupported operand type(s) for *=: 'dict' and 'int'
 #dict1*={'c':90} TypeError: unsupported operand type(s) for *=: 'dict' and 'dict'
 print(dict1)
+
