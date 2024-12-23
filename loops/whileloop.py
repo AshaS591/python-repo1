@@ -361,56 +361,66 @@
 
 # # 32.wap to check whether the number is armstrong number or not
 
-num=int(input('Enter a number :'))
-armstrong=0
-temp=num
-length=len(str(num))
-while num!=0:
-    last_digit=num%10
-    armstrong+=(last_digit**length)
-    num//=10
-if armstrong==temp:
-    print(f"{temp} is armstrong number...")
-else:
-    print(f"{temp} is not armstrong number...")
+# num=int(input('Enter a number :'))
+# armstrong=0
+# temp=num
+# length=len(str(num))
+# while num!=0:
+#     last_digit=num%10
+#     armstrong+=(last_digit**length)
+#     num//=10
+# if armstrong==temp:
+#     print(f"{temp} is armstrong number...")
+# else:
+#     print(f"{temp} is not armstrong number...")
 
-# 33. Write a program to accept 10 numbers from the user and display it’s average
-num=1
-numbers=[]
-while num<=10:
-    number=int(input('Enter number :'))
-    numbers.append(number)
+# # 33. Write a program to accept 10 numbers from the user and display it’s average
+# num=1
+# numbers=[]
+# while num<=10:
+#     number=int(input('Enter number :'))
+#     numbers.append(number)
+#     num+=1
+# avg=sum(numbers)/len(numbers)
+# print(f'Aerage of {numbers} is {avg}')
+
+# #34.Write a program to accept 10 numbers from the user and display the largest & smallest number number.
+# num=1
+# numbers=[]
+# while num<=10:
+#     number=int(input('Enter number :'))
+#     numbers.append(number)
+#     num+=1
+# minimum_no=min(numbers)
+# maximum_no=max(numbers)
+# print(f' Minimum number among {numbers} is {minimum_no}')
+# print(f' Maximum number among {numbers} is {maximum_no}')
+
+# # 35. Write a program to display sum of odd numbers and even numbers separately that fall between two numbers accepted from the user.(including both numbers) using while loop.
+
+# start=int(input('Enter starting number :'))
+# end=int(input('Enter ending number :'))
+# even=[]
+# odd=[]
+# while start<=end:
+#     if start%2==0:
+#         even.append(start)
+#         start+=1
+#     else:
+#         odd.append(start)
+#         start+=1
+# even_sum=sum(even)
+# odd_sum=sum(odd)
+
+# print(f'Even sum of {even} is {even_sum}')
+# print(f'Odd sum of {odd} is {odd_sum}')
+
+# 36.Write a program to print the following series till nterms.1 4 9 16 25----n terms.
+num=0
+series=''
+end=int(input('Enter ending point :'))
+while num<=end:
+    series+=f' {num**2}'
     num+=1
-avg=sum(numbers)/len(numbers)
-print(f'Aerage of {numbers} is {avg}')
+print(series)
 
-#34.Write a program to accept 10 numbers from the user and display the largest & smallest number number.
-num=1
-numbers=[]
-while num<=10:
-    number=int(input('Enter number :'))
-    numbers.append(number)
-    num+=1
-minimum_no=min(numbers)
-maximum_no=max(numbers)
-print(f' Minimum number among {numbers} is {minimum_no}')
-print(f' Maximum number among {numbers} is {maximum_no}')
-
-# 35. Write a program to display sum of odd numbers and even numbers separately that fall between two numbers accepted from the user.(including both numbers) using while loop.
-
-start=int(input('Enter starting number :'))
-end=int(input('Enter ending number :'))
-even=[]
-odd=[]
-while start<=end:
-    if start%2==0:
-        even.append(start)
-        start+=1
-    else:
-        odd.append(start)
-        start+=1
-even_sum=sum(even)
-odd_sum=sum(odd)
-
-print(f'Even sum of {even} is {even_sum}')
-print(f'Odd sum of {odd} is {odd_sum}')
