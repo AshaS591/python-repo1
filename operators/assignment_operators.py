@@ -69,5 +69,51 @@ complex1-=2+1j
 print(complex1) #(8+1j)
 
 set1={1,2,3,4}
-set1-={2,5,6}
+set1-={2,5,6} # => set1=set1-set2
 print(set1) #{1, 3, 4}
+
+############################################################################################
+
+""" *= """
+
+''' *= on numbers '''
+
+num1=10
+num1*=20 # =>num1=num1*20
+print(num1) #200
+
+''' *= on complex numbers '''
+
+complex1=2+3j
+complex1*=2 # =>complex1=complaex1*2
+print(complex1) #(4+6j)
+
+''' *= on bool'''
+fare=True
+fare*=False # 1*0=0
+print(fare) #0
+
+''' *= on strings'''
+name='Asha S '
+name*=5 # second operand must be number which represents number of occurances of a string 
+print(name) #Asha S Asha S Asha S Asha S Asha S
+
+''' *= on list'''
+list1=[10,20,30]
+#list1*=[20,30] #can't multiply sequence by non-int of type 'list'
+
+list1*=2  # second operand must be number which represents number of occurances of an elements
+print(list1) #[10, 20, 30, 10, 20, 30]
+
+
+''' *= on tuple '''
+tuple1=(9,10)
+# tuple1*=(2,5) TypeError: can't multiply sequence by non-int of type 'tuple'
+
+tuple1*=2
+print(tuple1) #(9, 10, 9, 10)
+
+dict1={'a':10,'b':20}
+#dict1*=2 unsupported operand type(s) for *=: 'dict' and 'int'
+#dict1*={'c':90} TypeError: unsupported operand type(s) for *=: 'dict' and 'dict'
+print(dict1)
