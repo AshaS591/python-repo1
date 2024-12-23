@@ -588,3 +588,34 @@ Use a nested list comprehension to find all of the numbers from 1-1000 that are 
 '''
 nested_list=[[num for num in range(1,100) if num%number==0]for number in range(2,10)]
 print(nested_list)
+
+'''Write a program to find the sum of following series
+ 1+8+27…………nterms
+'''
+start=1
+series=''
+end=int(input('Enter ending point :'))
+while start<=end:
+    series+=f'{start**3}'
+    start+=1
+    if start<end:
+        series+=' + '
+print(series)
+
+
+
+
+''' Write a program to find the sum of following series:
+  2 + 6 + 12 + 20 + 3042. . . .nterms'''
+start=1
+series=''
+end=int(input('Enter ending point :'))
+while start<=end:
+    
+    series+=f'{}'
+   
+    start+=1
+    if start<end:
+        series+=' + '
+print(series)
+
