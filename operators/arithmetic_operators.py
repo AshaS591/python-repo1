@@ -3,17 +3,23 @@ num1=20
 num2=90
 res=num1+num2
 print('sum is ',res)
+
 res=num1-num2
 print('difference is ',res)
+
 res=num1*num2
 print('product is ',res)
+
 res=num1/num2
 print('division res is ',res)
+
 res=num1//num2
 print('floor res is ',res)
+
 n=3
 res=num1**n
 print('power of res is ',res)
+
 res=num1%num2
 print('modulo res is ',res)
 
@@ -24,17 +30,23 @@ num1=79.99
 num2=5.5
 res=num1+num2
 print('sum is ',res)
+
 res=num1-num2
 print('difference is ',res)
+
 res=num1*num2
 print('product is ',res)
+
 res=num1/num2
 print('division res is ',res)
+
 res=num1//num2
 print('floor res is ',res)
+
 n=3
 res=num1**n
 print('power of res is ',res)
+
 res=num1%num2
 print('modulo res is ',res)
 
