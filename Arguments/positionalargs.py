@@ -1,3 +1,9 @@
+'''
+Tyoes of arguments
+1.variable arguments
+2.keyword arguments
+'''
+
 def add(num1,num2):
     return num1+num2
 res=add(20,30)
