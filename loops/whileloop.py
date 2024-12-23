@@ -373,3 +373,13 @@ if armstrong==temp:
     print(f"{temp} is armstrong number...")
 else:
     print(f"{temp} is not armstrong number...")
+
+# 33. Write a program to accept 10 numbers from the user and display it’s average
+num=1
+numbers=[]
+while num<=10:
+    number=int(input('Enter number :'))
+    numbers.append(number)
+    num+=1
+avg=sum(numbers)/len(numbers)
+print(f'Aerage of {numbers} is {avg}')
