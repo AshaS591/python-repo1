@@ -16,3 +16,7 @@ print(math.fabs(-90))
 print(math.ceil(10.2))
 
 print(math.fsum([90,78]))
+
+print(math.fmod(10,3))
+
+print(math.remainder(10,4))
