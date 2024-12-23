@@ -147,3 +147,8 @@
 # # 3.wap to create dictionary in the range of 20 if num is even, key will be num and value will be num multiplied by 10
 numbers={num:num*10 for num in range(20) if num%2==0}
 print(numbers)
+
+# 4.wap to create dictionary ,consider list of names as a collection where each key is name from that collection and value will be length of name
+names=['asha','amala','sukrutha','bhavani']
+new_names={name:len(name) for name in names}
+print(new_names)
