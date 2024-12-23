@@ -395,3 +395,22 @@ minimum_no=min(numbers)
 maximum_no=max(numbers)
 print(f' Minimum number among {numbers} is {minimum_no}')
 print(f' Maximum number among {numbers} is {maximum_no}')
+
+# 35. Write a program to display sum of odd numbers and even numbers separately that fall between two numbers accepted from the user.(including both numbers) using while loop.
+
+start=int(input('Enter starting number :'))
+end=int(input('Enter ending number :'))
+even=[]
+odd=[]
+while start<=end:
+    if start%2==0:
+        even.append(start)
+        start+=1
+    else:
+        odd.append(start)
+        start+=1
+even_sum=sum(even)
+odd_sum=sum(odd)
+
+print(f'Even sum of {even} is {even_sum}')
+print(f'Odd sum of {odd} is {odd_sum}')
