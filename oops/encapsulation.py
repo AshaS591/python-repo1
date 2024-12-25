@@ -62,6 +62,7 @@ class student:
         print( self.__age,student._student__rollno)
         # return student._student__rollno
         print(student._student__rollno)
+        
     @Age.setter
     def Age(self,newage):
         self.__age=newage
