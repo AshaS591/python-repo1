@@ -42,8 +42,20 @@ items=iter(colors)  #we can use iterator only once
 # print(next(items))
 # print(next(items)) # once its reaches to last element if use next method again it raises an exception i.e stop iteration
 
-for item in items:
-    print(item)
-print(next(items))# once its reaches to last element if use next method again it raises an exception i.e stop iteration
+# for item in items:
+#     print(item)
+# print(next(items))# once its reaches to last element if use next method again it raises an exception i.e stop iteration
 
+new_items=list(items)
+print(new_items)
+for item in new_items:
+    print(new_items)
+print(new_items[0])
+print(new_items[1])
+
+print(new_items[2])
+print(new_items[3])
+print(new_items[0])
+
+#print(next(new_items)) #'list' object is not an iterator
 
