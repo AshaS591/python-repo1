@@ -11,15 +11,21 @@ data=[
         'description':'Cricker',
         'country':'India'
     },
-    {'name':'ISRO',
-        'followers':250,
-        'description':'space agency',
+    {'name':'Cristiano Ronaldo',
+        'followers':610,
+        'description':'Footcaller',
+        'country':'Portugal'
+    },
+    {
+        'name':'Fit Tuber',
+        'followers':350,
+        'description':'Youtuber',
         'country':'India'
     },
     {
         'name':'',
-        'followers':250,
-        'description':'space agency',
+        'followers':109,
+        'description':'',
         'country':'India'
     }
 ]
