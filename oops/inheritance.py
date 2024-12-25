@@ -5,6 +5,7 @@ class mamal:
         print(f"{self.name} is worm blooded")
     def heart_chambers(self):
         print(f"{self.name} has four chambers in heart")
+        
 class tiger(mamal):
     ...
 animal=tiger('tiger')
