@@ -36,13 +36,14 @@ print(dir(emp_info))
 
 colors=['black','red','orange','white']
 items=iter(colors)  #we can use iterator only once
-print(items) #we get address
-print(next(items)) # gives one item at a time
-print(next(items))
-print(next(items))
-print(next(items)) # once its reaches to last element if use next method again it raises an exception i.e stop iteration
+# print(items) #we get address
+# print(next(items)) # gives one item at a time
+# print(next(items))
+# print(next(items))
+# print(next(items)) # once its reaches to last element if use next method again it raises an exception i.e stop iteration
 
-
-
+for item in items:
+    print(item)
+print(next(items))# once its reaches to last element if use next method again it raises an exception i.e stop iteration
 
 
