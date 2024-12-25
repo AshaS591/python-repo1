@@ -672,3 +672,14 @@ obj.random()
 obj.sample()
 
 '''class implimentation of function decorator'''
+class Deco:
+    def __call__(self,func_address):
+        def inner(*args,**kwargs):
+            print('*'*20)
+            func_address(*args,**kwargs)
+            print('*'*20)
+        return inner
+@Deco()
+def message():
+    print('Inside message function..')
+message()
