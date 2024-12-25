@@ -6,4 +6,5 @@ print(string.title())
 print(string.upper())
 print(string.center(10))
 
+print(string.endswith('a'))
 
