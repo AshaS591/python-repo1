@@ -34,3 +34,15 @@ print(set1)
 
 set1.difference_update(set2)
 print(set1)
+
+set3={True,0,3,5}
+set4={1,0,3,5,5,7}
+print(set3.issubset(set4))
+
+print(set4.issuperset(set3))
+
+print(set4.isdisjoint(set3))
+
+print(set4.discard(set3))
+
+
