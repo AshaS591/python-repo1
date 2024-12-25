@@ -3,8 +3,10 @@
 
 lap=('dell','lenevo','hp','mac','asus')
 print(lap.count('dell'))  #count method
+
 print(lap.index('mac'))   #index method
 print(lap.index('mac',1,4))
 rings=('gold','silver','bronze','copper','platinum','diamond')
+
 print(len(rings))
 print(rings[2][2:5:2])
