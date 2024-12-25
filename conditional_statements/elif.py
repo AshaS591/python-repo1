@@ -1,3 +1,5 @@
+''' Elif statements '''
+
 #1.WAP to check whether the user entered number is single digit or 2 digit or 3 digit or morethan that 
 num=int(input('enter a number :'))
 if num>0:
