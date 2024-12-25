@@ -683,3 +683,26 @@ class Deco:
 def message():
     print('Inside message function..')
 message()
+
+''' function implimentation of a class decorator '''
+def outer(cls_address): 
+    def decorator(method_address):
+        def inner(*args,**kwargs):
+            print('#'*20)
+            method_address(*args,**kwargs)
+            print('#'*20)
+        return inner
+    for name,address in cls_address.__dict__.items():
+        if callable(address):
+            setattr(cls_address,name,decorator(address))
+    return cls_address
+
+@outer
+class General:
+    def metod1(self):
+        print('Inside method1')
+    def metod2(self):
+        print('Inside method2')
+obj=General()
+obj.metod1()
+obj.metod2()
