@@ -619,7 +619,7 @@
 
 ''' Decorators '''
 
-''' class decorators '''
+''' class implimentation of class decorators '''
 """ 1. """
 class ClsDeco:
     def __call__(self,cls_address):
@@ -645,18 +645,20 @@ obj.add()
 obj.product()
 
 ''' 2. '''   
-
-def outer(method_deco):
-    def wrapper(*args,**kwargs):
-        print(f'Executing {method_deco.__name__}')
-        method_deco(*args,**kwargs)
-        print(f'Executed {method_deco.__name__}')
-    return wrapper
+class Decorator:
+    def __call__(self,method_deco):
+    
+        def wrapper(*args,**kwargs):
+            print(f'Executing {method_deco.__name__}')
+            method_deco(*args,**kwargs)
+            print(f'Executed {method_deco.__name__}')
+        return wrapper
 class Deco:
     def __call__(self,clss):
         for name,address in clss.__dict__.values():
             if callable(address):
-                setattr(clss,name,outer(address))
+                obj=Decorator()
+                setattr(clss,name,obj(address))
         return clss
 
 class Display:
@@ -668,3 +670,5 @@ class Display:
 obj=Display()
 obj.random()
 obj.sample()
+
+'''class implimentation of function decorator'''
