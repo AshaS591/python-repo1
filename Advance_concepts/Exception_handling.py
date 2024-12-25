@@ -1,3 +1,4 @@
+''' Exception Handling'''
 
 # Default Exception Handling
 """1. wap to checks a person eligible to vote or not using exception handling"""
