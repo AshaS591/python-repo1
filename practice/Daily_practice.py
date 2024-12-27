@@ -706,3 +706,9 @@ class General:
 obj=General()
 obj.metod1()
 obj.metod2()
+
+''' Dictionary comprehension '''
+names=['asha','abhi','shashi','rishi']
+roll_call=[1,2,3,4]
+details={name:rollno for name,rollno in zip(names,roll_call)}
+print(details)
