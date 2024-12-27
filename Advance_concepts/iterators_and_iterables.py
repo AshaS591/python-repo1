@@ -50,7 +50,8 @@ new_items=list(items)
 print(new_items)
 for item in new_items:
     print(new_items)
-
+# print(next(items)) #StopIteration
+print(tuple(items)) #()
 
 #print(next(new_items)) #'list' object is not an iterator
 
