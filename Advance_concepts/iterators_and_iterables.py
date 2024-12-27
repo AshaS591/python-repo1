@@ -49,7 +49,7 @@ items=iter(colors)  #we can use iterator only once
 new_items=list(items)
 print(new_items)
 for item in new_items:
-    print(new_items)
+    print(item)
 # print(next(items)) #StopIteration
 print(tuple(items)) #()
 
