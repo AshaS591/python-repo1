@@ -1,6 +1,8 @@
 ''' 
 Identity operators --->returns boolean values
 
+used to compare both values and address of two variables/collection
+
 1.is
 2.is not
 
