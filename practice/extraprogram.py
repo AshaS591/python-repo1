@@ -37,3 +37,26 @@ print(piglatin)
 #             piglatin=word+'ay'
 # print(piglatin)
 
+char=input('enter a char')
+list1=[]
+if char.isalpha():
+    if char in 'aeiouAEIOU':
+        list1.append(char)
+        print(list1)
+    else:
+        print(ord(char))
+
+#2
+num1=int(input('enter num1 :'))
+num2=int(input('enter num2 :'))
+num3=int(input('enter num3 :'))
+if num1>num2:
+    if num1>num3:
+        print(f"{num1} is greatest")
+    else:
+        print(f"{num3} is greatest")
+else:
+    if num2>num3:
+        print(f"{num2} is greatest")
+    else:
+        print(f"{num3} is greatest")
