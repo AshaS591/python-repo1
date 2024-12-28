@@ -1,302 +1,302 @@
-# # #1.To print square of a number entered by user
-# # num=int(input('enter a number :'))
-# # square=num**2
-# # print(f'Square of {num} is {square}')       
+# #1.To print square of a number entered by user
+# num=int(input('enter a number :'))
+# square=num**2
+# print(f'Square of {num} is {square}')       
 
-# # #2.To print cube of a number entered by user
-# # num=int(input('enter a number :'))
-# # cube=num**3
-# # print(f'Cube of {num} is {cube}')
+# #2.To print cube of a number entered by user
+# num=int(input('enter a number :'))
+# cube=num**3
+# print(f'Cube of {num} is {cube}')
 
-# # #3. To print last element from the list entered by user
-# # user_list=eval(input('enter a list :'))
-# # last_element=user_list[-1]
-# # print(f"The last element of the user entered list is {last_element}")
+# #3. To print last element from the list entered by user
+# user_list=eval(input('enter a list :'))
+# last_element=user_list[-1]
+# print(f"The last element of the user entered list is {last_element}")
 
-# # #4.To print the element present in the index position entered by user
-# # user_list=eval(input('enter a list :'))
-# # index=int(input('enter a index :'))
-# # print(f'element present in the index position entered by user is {user_list[index]}')
+# #4.To print the element present in the index position entered by user
+# user_list=eval(input('enter a list :'))
+# index=int(input('enter a index :'))
+# print(f'element present in the index position entered by user is {user_list[index]}')
 
-# # #5.To print the remove element present in the index position entered by user
-# # user_list=eval(input('enter a list :'))
-# # index=int(input('enter a index :'))
-# # print(user_list.pop(index))
+# #5.To print the remove element present in the index position entered by user
+# user_list=eval(input('enter a list :'))
+# index=int(input('enter a index :'))
+# print(user_list.pop(index))
 
-# # #6.To print the reverse of a word entered by user
-# # word=input('enter a word :')
-# # print(f"revere of {word} is {word[::-1]}")
+# #6.To print the reverse of a word entered by user
+# word=input('enter a word :')
+# print(f"revere of {word} is {word[::-1]}")
 
-# # #7.To perform basic mathematical operations on 2 no entered by the user and print result using print function
-# # num1=int(input('enter first no :'))
-# # num2=int(input('enter second no :'))
-# # sum=num1+num2
-# # diff=num1-num2
-# # product=num1*num2
-# # div=num1/num2
-# # mod=num1%num2
-# # floor=num1//num2
-# # print(f"sum is {sum},diffrence is {diff},product is {product},true division is {div},mod is {mod},floor division is {floor}")
+# #7.To perform basic mathematical operations on 2 no entered by the user and print result using print function
+# num1=int(input('enter first no :'))
+# num2=int(input('enter second no :'))
+# sum=num1+num2
+# diff=num1-num2
+# product=num1*num2
+# div=num1/num2
+# mod=num1%num2
+# floor=num1//num2
+# print(f"sum is {sum},diffrence is {diff},product is {product},true division is {div},mod is {mod},floor division is {floor}")
 
-# # #8.wap to print sum of the  digits of a 3 digit number entered by the user
-# # number=input('enter a number')
-# # a,b,c=number[0],number[1],number[2]
-# # sum=int(a)+int(b)+int(c)
-# # print(sum)
+# #8.wap to print sum of the  digits of a 3 digit number entered by the user
+# number=input('enter a number')
+# a,b,c=number[0],number[1],number[2]
+# sum=int(a)+int(b)+int(c)
+# print(sum)
 
-# # # 34.Write a program to check whether the first value present inside the given list is complex or not.
-# # items=eval(input('Enter a list of values :'))
-# # if type(items[0])==complex:
-# #     print(f"Datatype of {items[0]} is complex ")
-# # else:
-# #     print(f"Datatype of {items[0]} is not complex ")
+# # 34.Write a program to check whether the first value present inside the given list is complex or not.
+# items=eval(input('Enter a list of values :'))
+# if type(items[0])==complex:
+#     print(f"Datatype of {items[0]} is complex ")
+# else:
+#     print(f"Datatype of {items[0]} is not complex ")
 
-# # #35.Write a program to take and consider a tuple collection consisting of only two values. Check whether the taken tuple is homogeneous or heterogeneous.
-# # items=eval(input('Enter two items of a tuple :'))
-# # if type(items[0])==type(items[1]):
-# #     print(f"{items} is a homogeneous tuple")
-# # else:
-# #     print(f"{items} is a heterogeneous tuple")
+# #35.Write a program to take and consider a tuple collection consisting of only two values. Check whether the taken tuple is homogeneous or heterogeneous.
+# items=eval(input('Enter two items of a tuple :'))
+# if type(items[0])==type(items[1]):
+#     print(f"{items} is a homogeneous tuple")
+# else:
+#     print(f"{items} is a heterogeneous tuple")
 
-# #36.Write a program to check whether the given integer number is multiple of 10 or not.
-# # number = int(input('Enter a number :'))
-# # if number%10==0:
-# #     print(f"{number} is multiple of 10")
-# # else:
-# #     print(f"{number} is not multiple of 10")
+#36.Write a program to check whether the given integer number is multiple of 10 or not.
+# number = int(input('Enter a number :'))
+# if number%10==0:
+#     print(f"{number} is multiple of 10")
+# else:
+#     print(f"{number} is not multiple of 10")
 
-# # #Write a program to check whether the given string is palindrome or not.
-# # string = input('Enter a string :')
-# # reverse=string[::-1]
-# # if reverse==string:
-# #     print(f"{string} is a palindrome...")
-# # else:
-# #     print(f"{string} is not a palindrome...")
+# #Write a program to check whether the given string is palindrome or not.
+# string = input('Enter a string :')
+# reverse=string[::-1]
+# if reverse==string:
+#     print(f"{string} is a palindrome...")
+# else:
+#     print(f"{string} is not a palindrome...")
 
-# #39.Write a program to consider string input, if it is having more than three characters then print length of the string else print string as it is.
-# # string = input('Enter a string :')
-# # length=len(string)
-# # if length>3:
-# #     print(f"Length of the string {string} is {length} ")
-# # else:
-# #     print(f"string is {string}")
+#39.Write a program to consider string input, if it is having more than three characters then print length of the string else print string as it is.
+# string = input('Enter a string :')
+# length=len(string)
+# if length>3:
+#     print(f"Length of the string {string} is {length} ")
+# else:
+#     print(f"string is {string}")
 
-# # # 21/11/2024 (every day five programs)
-# # #1 wap to check whether a number is armstrong no or not using while loop
-# # number=int(input('enter a number :'))
-# # num=number
-# # armstrong_num=0
-# # while num!=0:
-# #     last_digit=num%10
-# #     armstrong_num+=last_digit**len(str(number))
-# #     num//=10
-# # if number==armstrong_num:
-# #     print(f"{number} is armstrong number...")
-# # else:
-# #     print(f"{number} is not armstrong number...")
+# # 21/11/2024 (every day five programs)
+# #1 wap to check whether a number is armstrong no or not using while loop
+# number=int(input('enter a number :'))
+# num=number
+# armstrong_num=0
+# while num!=0:
+#     last_digit=num%10
+#     armstrong_num+=last_digit**len(str(number))
+#     num//=10
+# if number==armstrong_num:
+#     print(f"{number} is armstrong number...")
+# else:
+#     print(f"{number} is not armstrong number...")
 
-# # #2 wap to find factorial of a number using recursive functions
-# # def factorial(num):
-# #     if num==0:
-# #         return 1
-# #     else:
-# #         return num*factorial(num-1) 
-# # number=int(input('Enter a number :'))
-# # print(f"factorial of {number} is {factorial(number)}")
+# #2 wap to find factorial of a number using recursive functions
+# def factorial(num):
+#     if num==0:
+#         return 1
+#     else:
+#         return num*factorial(num-1) 
+# number=int(input('Enter a number :'))
+# print(f"factorial of {number} is {factorial(number)}")
 
-# # #3 wap to  create dictionary where keys are each characters in a sentance and values are numbers of occurances of characters using for loop
-# # sentence=input('Enter a sentance :')
-# # collection={}
-# # for each_char in sentence:
-# #     if each_char in collection:
-# #         collection[each_char]+=1
-# #     else:
-# #         collection[each_char]=1
-# # print(collection)
+# #3 wap to  create dictionary where keys are each characters in a sentance and values are numbers of occurances of characters using for loop
+# sentence=input('Enter a sentance :')
+# collection={}
+# for each_char in sentence:
+#     if each_char in collection:
+#         collection[each_char]+=1
+#     else:
+#         collection[each_char]=1
+# print(collection)
 
-# # #4 wap to reverse a string without using builtin method
-# # string=input('Enter a string :')
-# # index=0
-# # reverse=''
-# # while index<len(string):
-# #     char=string[index]
-# #     reverse=char+reverse
-# #     index+=1
-# # print(f'Reverse of {string} : {reverse}')
+# #4 wap to reverse a string without using builtin method
+# string=input('Enter a string :')
+# index=0
+# reverse=''
+# while index<len(string):
+#     char=string[index]
+#     reverse=char+reverse
+#     index+=1
+# print(f'Reverse of {string} : {reverse}')
 
-# # #5 wap to get the following output
-# # # input ='hai hello good morning'
-# # # output={'hai':'a','hello':'l','good':'gd','morning':'n'}
+# #5 wap to get the following output
+# # input ='hai hello good morning'
+# # output={'hai':'a','hello':'l','good':'gd','morning':'n'}
 
-# # line=input('Enter a sequence of words :')
-# # words=line.split()
-# # output={}
-# # for word in words:
-# #     if len(word)%2==0:
-# #         output[word]=word[0]+word[-1]
-# #     else:
-# #         output[word]=word[len(word)//2]
-# # print(output)
+# line=input('Enter a sequence of words :')
+# words=line.split()
+# output={}
+# for word in words:
+#     if len(word)%2==0:
+#         output[word]=word[0]+word[-1]
+#     else:
+#         output[word]=word[len(word)//2]
+# print(output)
 
-# #Day 2
-# #1. wap in which function takes another function an argument
-# # def add(num1,num2):
-# #     return num1+num2
-# # def diff(num1,num2):
-# #     return num1-num2
-# # def product(num1,num2):
-# #     return num1*num2
-# # def arithmetic(sum,product,diff,num1,num2):
-# #     return f"sum of {num1} and {num2} is {sum(num1,num2)}",f"Difference of {num1} and {num2} is {diff(num1,num2)}",f"product of {num1} and {num2} is {product(num1,num2)}"
-# # print(arithmetic(add,product,diff,10,40))
+#Day 2
+#1. wap in which function takes another function an argument
+# def add(num1,num2):
+#     return num1+num2
+# def diff(num1,num2):
+#     return num1-num2
+# def product(num1,num2):
+#     return num1*num2
+# def arithmetic(sum,product,diff,num1,num2):
+#     return f"sum of {num1} and {num2} is {sum(num1,num2)}",f"Difference of {num1} and {num2} is {diff(num1,num2)}",f"product of {num1} and {num2} is {product(num1,num2)}"
+# print(arithmetic(add,product,diff,10,40))
 
-# # #2 wap which is based on miscelleneous function
-# # def login(username,password):
-# #     name=input('Enter a name :')
-# #     if name==username:
-# #         print('valid username...')
-# #         pass_key=input('Enter a password :')
-# #         if pass_key==password:
-# #             print("Login succesfull...")
-# #         else:
-# #             count=0
-# #             while count<3:
-# #                 pass_key=input('Enter a password :')
-# #                 if pass_key==password:
-# #                      print("Login succesfull...")
-# #                      break
-# #                 else:
-# #                     if count<2:
-# #                         print('Enter correct password...')
-# #                     else:
-# #                         print('Currently your account is blocked,Try after 24 hours')
-# #                 count+=1     
-# #     else:
-# #         print('Invalid username')
-# # sign_in=login
-# # sign_in(username='Asha',password='asha@1405s')
+# #2 wap which is based on miscelleneous function
+# def login(username,password):
+#     name=input('Enter a name :')
+#     if name==username:
+#         print('valid username...')
+#         pass_key=input('Enter a password :')
+#         if pass_key==password:
+#             print("Login succesfull...")
+#         else:
+#             count=0
+#             while count<3:
+#                 pass_key=input('Enter a password :')
+#                 if pass_key==password:
+#                      print("Login succesfull...")
+#                      break
+#                 else:
+#                     if count<2:
+#                         print('Enter correct password...')
+#                     else:
+#                         print('Currently your account is blocked,Try after 24 hours')
+#                 count+=1     
+#     else:
+#         print('Invalid username')
+# sign_in=login
+# sign_in(username='Asha',password='asha@1405s')
 
-# #3 wap using concept of kwargs(keyword arguments)
-# # def voter_list(*ages,**names):
-# #     user_name = input("Enter your name :")
-# #     user_age = int(input('Enter your age :'))
-# #     for age in ages:
-# #         if age==user_age:
-# #             print('Eligible to vote....allow us to verify with other details as well...')
-# #             for name in names:
-# #                 if names[name]==user_name:
-# #                     print(f"Your are deatils are there in voterlist and you are eligible to vote... your details are  name :{user_name} and age :{user_age}")
-# #                 else:
-# #                     count=0
-# #                     while count<len(names):
-# #                         user_name = input("Enter your name :")
-# #                         if user_name==names[name]:
-# #                             print(f"Your are deatils are there in voterlist and you are eligible to vote... your details are  name :{user_name} and age :{user_age}")
-# #                             break
-# #                         else:
-# #                             print(f'You are eligible to vote but you not applied for voter id or not registered for election... your details are  name :{user_name} and age :{user_age}')
-# #                         count+=1
-# #             else:
-# #                 print(f'You are eligible to vote but you not applied for voter id or not registered for election... your details are  name :{user_name} and age :{user_age}')
-# #         else:
-# #             count1=0
-# #             while count1<len(ages):
-# #                 user_age = int(input('Enter your age :'))
-# #                 if age==user_age:
-# #                     print('Eligible to vote....allow us to verify with other details as well...')
-# #                     for name in names:
-# #                         if names[name]==user_name:
-# #                             print(f"Your are deatils are there in voterlist and you are eligible to vote... your details are  name :{user_name} and age :{user_age}")
-# #                         else:
-# #                             count=0
-# #                             while count<len(names):
-# #                                 user_name = input("Enter your name :")
-# #                                 if user_name==names[name]:
-# #                                     print(f"Your are deatils are there in voterlist and you are eligible to vote... your details are  name :{user_name} and age :{user_age}")
-# #                                     break
-# #                                 else:
-# #                                     print(f'You are eligible to vote but you not applied for voter id or not registered for election... your details are  name :{user_name} and age :{user_age}')
-# #                                 count1+=1
-# #                     else:
-# #                         print(f'You are eligible to vote but you not applied for voter id or not registered for election... your details are  name :{user_name} and age :{user_age}')
-# #                 else:
-# #                     print('You are minor not eligible to vote')
-# # voter_list(10,20,name1='asha',name2='anu')
+#3 wap using concept of kwargs(keyword arguments)
+# def voter_list(*ages,**names):
+#     user_name = input("Enter your name :")
+#     user_age = int(input('Enter your age :'))
+#     for age in ages:
+#         if age==user_age:
+#             print('Eligible to vote....allow us to verify with other details as well...')
+#             for name in names:
+#                 if names[name]==user_name:
+#                     print(f"Your are deatils are there in voterlist and you are eligible to vote... your details are  name :{user_name} and age :{user_age}")
+#                 else:
+#                     count=0
+#                     while count<len(names):
+#                         user_name = input("Enter your name :")
+#                         if user_name==names[name]:
+#                             print(f"Your are deatils are there in voterlist and you are eligible to vote... your details are  name :{user_name} and age :{user_age}")
+#                             break
+#                         else:
+#                             print(f'You are eligible to vote but you not applied for voter id or not registered for election... your details are  name :{user_name} and age :{user_age}')
+#                         count+=1
+#             else:
+#                 print(f'You are eligible to vote but you not applied for voter id or not registered for election... your details are  name :{user_name} and age :{user_age}')
+#         else:
+#             count1=0
+#             while count1<len(ages):
+#                 user_age = int(input('Enter your age :'))
+#                 if age==user_age:
+#                     print('Eligible to vote....allow us to verify with other details as well...')
+#                     for name in names:
+#                         if names[name]==user_name:
+#                             print(f"Your are deatils are there in voterlist and you are eligible to vote... your details are  name :{user_name} and age :{user_age}")
+#                         else:
+#                             count=0
+#                             while count<len(names):
+#                                 user_name = input("Enter your name :")
+#                                 if user_name==names[name]:
+#                                     print(f"Your are deatils are there in voterlist and you are eligible to vote... your details are  name :{user_name} and age :{user_age}")
+#                                     break
+#                                 else:
+#                                     print(f'You are eligible to vote but you not applied for voter id or not registered for election... your details are  name :{user_name} and age :{user_age}')
+#                                 count1+=1
+#                     else:
+#                         print(f'You are eligible to vote but you not applied for voter id or not registered for election... your details are  name :{user_name} and age :{user_age}')
+#                 else:
+#                     print('You are minor not eligible to vote')
+# voter_list(10,20,name1='asha',name2='anu')
 
-# #1.categorize all vowels in a string
-# # char=input('enter a char')
-# # if char.isalpha():
-# #     if char in 'aeiouAEIOU':
-# #         list1=[]
-# #         list1.append(char)
-# #         print(list1)
-# #     else:
-# #         print(ord(char))
+#1.categorize all vowels in a string
+# char=input('enter a char')
+# if char.isalpha():
+#     if char in 'aeiouAEIOU':
+#         list1=[]
+#         list1.append(char)
+#         print(list1)
+#     else:
+#         print(ord(char))
 
-# # #2 greatest among 3 numbers
-# # num1=int(input('enter num1 :'))
-# # num2=int(input('enter num2 :'))
-# # num3=int(input('enter num3 :'))
-# # if num1>num2:
-# #     if num1>num3:
-# #         print(f"{num1} is greatest")
-# #     else:
-# #         print(f"{num3} is greatest")
-# # else:
-# #     if num2>num3:
-# #         print(f"{num2} is greatest")
-# #     else:
-# #         print(f"{num3} is greatest")
+# #2 greatest among 3 numbers
+# num1=int(input('enter num1 :'))
+# num2=int(input('enter num2 :'))
+# num3=int(input('enter num3 :'))
+# if num1>num2:
+#     if num1>num3:
+#         print(f"{num1} is greatest")
+#     else:
+#         print(f"{num3} is greatest")
+# else:
+#     if num2>num3:
+#         print(f"{num2} is greatest")
+#     else:
+#         print(f"{num3} is greatest")
 
-# # #3. wap to check for leap year 
-# # year=304
-# # if year%4==0 and year%100!=0 or year%400==0:
-# #     print('leap year')
-# # else:
-# #     print("not")
+# #3. wap to check for leap year 
+# year=304
+# if year%4==0 and year%100!=0 or year%400==0:
+#     print('leap year')
+# else:
+#     print("not")
 
-# # #wap to print roots of a quadratic equation
-# # a=int(input('enter a:'))
-# # b=int(input('enter b:'))
-# # c=int(input('enter c:'))
-# # d=(b**2)- 4* a*c
-# # e=d**0.5
-# # root1=(-b+e)/2*a
-# # root2=(-b-e)/2*a
-# # print(f"Roots of {a}x^2{+(b)}x+{c} is {root1} and {root2}")
+# #wap to print roots of a quadratic equation
+# a=int(input('enter a:'))
+# b=int(input('enter b:'))
+# c=int(input('enter c:'))
+# d=(b**2)- 4* a*c
+# e=d**0.5
+# root1=(-b+e)/2*a
+# root2=(-b-e)/2*a
+# print(f"Roots of {a}x^2{+(b)}x+{c} is {root1} and {root2}")
 
-# # #wap to swap to numbers
-# # num1=int(input("enter a number 1: "))
-# # num2=int(input("enter a number 2: "))
-# # temp=num1
-# # num1=num2
-# # num2=temp
-# # print(f"the numbers after swaping are num1={num1},num2={num2}")
+# #wap to swap to numbers
+# num1=int(input("enter a number 1: "))
+# num2=int(input("enter a number 2: "))
+# temp=num1
+# num1=num2
+# num2=temp
+# print(f"the numbers after swaping are num1={num1},num2={num2}")
 
-# # #wap to swap to numbers without using temp variable
-# # num1=int(input("enter a number 1: "))
-# # num2=int(input("enter a number 2: "))
-# # num1=num1+num2
-# # num2=num1-num2
-# # num1=num1-num2
-# # print(f"the numbers after swaping are num1={num1},num2={num2} without using temp variable")
+# #wap to swap to numbers without using temp variable
+# num1=int(input("enter a number 1: "))
+# num2=int(input("enter a number 2: "))
+# num1=num1+num2
+# num2=num1-num2
+# num1=num1-num2
+# print(f"the numbers after swaping are num1={num1},num2={num2} without using temp variable")
 
-# # #wap to print no of vowels in string
-# # string=input('enter a sequence :')
-# # low=string.lower()
-# # a=low.count('a')
-# # e=low.count('e')
-# # i=low.count('i')
-# # o=low.count('o')
-# # u=low.count('u')
-# # print(f"count of vowels in {string} is {a+e+i+o+u}")
+# #wap to print no of vowels in string
+# string=input('enter a sequence :')
+# low=string.lower()
+# a=low.count('a')
+# e=low.count('e')
+# i=low.count('i')
+# o=low.count('o')
+# u=low.count('u')
+# print(f"count of vowels in {string} is {a+e+i+o+u}")
 
 
-# # # string palindrome progarame
-# # string=input('enter the word :')
-# # rev_str=string[::-1]
-# # if rev_str==string:
-# #     print('palindrome')
+# # string palindrome progarame
+# string=input('enter the word :')
+# rev_str=string[::-1]
+# if rev_str==string:
+#     print('palindrome')
 
 # """
 # *
