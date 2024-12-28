@@ -14,4 +14,16 @@ print(string.index('l'))
 
 print(string.isalnum())
 
+print(string.isdigit())
+
+print(string.isupper())
+
+print(string.isalpha())
+
+print(string.find('a'))
+
+
+
+
+
 
