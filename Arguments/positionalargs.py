@@ -4,6 +4,7 @@ Types of arguments
 2.keyword arguments
 '''
 
+'''1.variable arguments'''
 def add(num1,num2):
     return num1+num2
 res=add(20,30)
