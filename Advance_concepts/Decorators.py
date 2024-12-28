@@ -13,7 +13,7 @@ def greet():
     print('Welcome to Decorators in python')
 
 greet()
-############################ PARAMETERIZED DECORATOR ##############################################
+############################ PARAMETERIZED DECORATOR ##################################
 from time import sleep
 def outer(n):
     def decorator(func_name):
@@ -31,7 +31,7 @@ def display(n):
     print(f"calling display function for {n+1} time")
 
 display()
-##################################################################################################
+#########################################################################################
 
 """WAP to print factorial of a number using decorator"""
 
@@ -57,7 +57,7 @@ def factorial(num:int):
 
 factorial(6)
 
-##################################################################################################
+######################################################################################
 
 """WAP to print reverse of a number using decorator"""
 
@@ -82,7 +82,7 @@ def reverse(num:int):
 
 reverse(456)
 
-##################################################################################################
+####################################################################################
 
 """WAP to check for a number palindrome  using decorator"""
 def outer(num):
