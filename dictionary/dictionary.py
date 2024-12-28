@@ -17,5 +17,8 @@ print(details.items())
 
 print(details.pop('Branch'))
 
+new=details.copy()
+print(new)
+
 
 
