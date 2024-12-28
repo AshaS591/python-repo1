@@ -712,3 +712,7 @@ names=['asha','abhi','shashi','rishi']
 roll_call=[1,2,3,4]
 details={name:rollno for name,rollno in zip(names,roll_call)}
 print(details)
+
+''' Set Dictionary '''
+numbers={num**2 for num in range(10) if num%2==0}
+print(numbers)
