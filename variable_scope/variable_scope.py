@@ -1,3 +1,5 @@
+''' Variable Scope '''
+
 num=20
 def display(num):
     print(num)
