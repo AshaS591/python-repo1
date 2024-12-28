@@ -20,5 +20,9 @@ print(details.pop('Branch'))
 new=details.copy()
 print(new)
 
+res=details.popitem()
+print(res)
 
 
+details.update({'age':21})
+print(details)
