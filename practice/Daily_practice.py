@@ -716,3 +716,20 @@ print(details)
 ''' Set Dictionary '''
 numbers={num**2 for num in range(10) if num%2==0}
 print(numbers)
+
+
+'''
+1 1 1 1
+1 2 2 1
+1 2 2 1
+1 1 1 1 
+'''
+for row in range(5):
+    for col in range(5):
+        if row==0 or col==0 or col==4 or row==4:
+            print(1,end=' ')
+
+        else:
+            print(2,end=' ')
+    print()
+    
