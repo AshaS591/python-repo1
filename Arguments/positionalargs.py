@@ -1,5 +1,5 @@
 '''
-Tyoes of arguments
+Types of arguments
 1.variable arguments
 2.keyword arguments
 '''

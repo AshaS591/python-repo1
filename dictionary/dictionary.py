@@ -7,3 +7,15 @@
    5. keys should of immutable datatype and values can be any datatype
 '''
 
+details={'name':'Asha S','roll_no':787,'CGPA':9.16,'Branch':'CSE'}
+
+print(details.keys())
+
+print(details.values())
+
+print(details.items())
+
+print(details.pop('Branch'))
+
+
+
