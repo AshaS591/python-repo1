@@ -733,3 +733,24 @@ for row in range(5):
             print(2,end=' ')
     print()
     
+'''
+1 5 2 5 3
+1 5 2 5 3
+1 5 2 5 3
+1 5 2 5 3
+1 5 2 5 3
+'''
+for row in range(5):
+    count=0
+    for col in range(5):
+        if col%2==0:
+            count+=1
+            print(count,end=' ')
+
+        else:
+            count1=5
+            print(count1,end=' ')
+            count1-=1
+    print()
+
+
