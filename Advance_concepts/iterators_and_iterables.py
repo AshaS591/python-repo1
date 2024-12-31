@@ -55,3 +55,107 @@ print(tuple(items)) #()
 
 #print(next(new_items)) #'list' object is not an iterator
 
+# class PrimeIter:
+#     def __init__(self):
+#         self.start=2
+#     def __iter__(self):
+#         return self
+#     def __next__(self):
+#         val=self.start
+#         self.prime=True
+#         for num in range(2,self.start):
+#             if self.start%num==0:
+#                 self.prime=False
+#                 break
+#         self.start+=1
+#         if self.prime:
+#             return val
+        
+        
+# iter1=PrimeIter()
+# print(next(iter1))
+# print(next(iter1))
+# print(next(iter1))
+# print(next(iter1))
+# print(next(iter1))
+# print(next(iter1))
+# print(next(iter1))
+# print(next(iter1))
+# print(next(iter1))
+# print(next(iter1))
+
+
+# class PrimeIterator:
+#     def __init__(self, max_num):
+#         self.max_num = max_num
+#         self.current_num = 2
+
+#     def __iter__(self):
+#         return self
+
+#     def __next__(self):
+#         if self.current_num > self.max_num:
+#             raise StopIteration
+
+#         while not self.is_prime(self.current_num):
+#             self.current_num += 1
+
+#         prime_num = self.current_num
+#         self.current_num += 1
+#         return prime_num
+
+#     @staticmethod
+#     def is_prime(num):
+#         if num < 2:
+#             return False
+#         for i in range(2, int(num ** 0.5) + 1):
+#             if num % i == 0:
+#                 return False
+#         return True
+# iter2=PrimeIterator(20)
+# print(next(iter2))
+# print(next(iter2))
+# print(next(iter2))
+
+
+class Prime:
+    def __init__(self,max):
+        self.start=2
+        self.max=max
+    def __iter__(self):
+        return self
+    def __next__(self):
+        if self.start>self.max:
+            raise StopIteration
+
+        while not self.is_prime(self.start):
+            self.start+=1
+        prime_number=self.start
+        self.start+=1
+        return prime_number
+    @staticmethod
+    def is_prime(num):
+        if num<2:
+            return False
+        for number in range(2,int(num**0.5)+1):
+            if num%number==0:
+                return False
+        
+        return True
+iter3=Prime(20)
+print(next(iter3))
+print(next(iter3))
+
+
+
+
+
+
+
+    
+
+      
+        
+
+
+        
