@@ -125,3 +125,42 @@ print(next(fib))
 print(next(fib))
 print(next(fib))
 print(next(fib))
+
+''' 6. '''
+
+class Armstrong:
+    def __init__(self):
+        self.num=1
+    def __iter__(self):
+        return self
+    def __next__(self):
+        length=len(str(self.num))
+        num=self.num
+        arms=0
+        while True:
+            while num!=0:
+                last_digit=num%10
+                arms+=last_digit**length
+                num//=10
+            if arms==self.num:
+                
+                self.num+=1
+                return self.num-1
+            self.num+=1
+            num = self.num
+            arms = 0
+            length = len(str(self.num))
+armst=Armstrong()
+print(next(armst))
+print(next(armst))
+print(next(armst))
+print(next(armst))
+print(next(armst))
+print(next(armst))
+print(next(armst))
+print(next(armst))
+print(next(armst))
+print(next(armst))
+print(next(armst))
+        
+
