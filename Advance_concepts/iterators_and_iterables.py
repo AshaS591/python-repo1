@@ -55,21 +55,23 @@ print(tuple(items)) #()
 
 #print(next(new_items)) #'list' object is not an iterator
 
-# class PrimeIter:
-#     def __init__(self):
-#         self.start=2
-#     def __iter__(self):
-#         return self
-#     def __next__(self):
-#         val=self.start
-#         self.prime=True
-#         for num in range(2,self.start):
-#             if self.start%num==0:
-#                 self.prime=False
-#                 break
-#         self.start+=1
-#         if self.prime:
-#             return val
+class PrimeIter:
+    def __init__(self):
+        self.start=2
+    def __iter__(self):
+        return self
+    def __next__(self):
+        val=self.start
+        self.prime=True
+        for num in range(2,self.start):
+            if self.start%num==0:
+                self.prime=False
+                break
+        self.start+=1
+        if self.prime:
+            return val
+
+
         
         
 # iter1=PrimeIter()
@@ -117,7 +119,14 @@ print(tuple(items)) #()
 # print(next(iter2))
 # print(next(iter2))
 
-
+def is_prime(num):
+        if num<2:
+            return False
+        for number in range(2,int(num**0.5)+1):
+            if num%number==0:
+                return False
+        
+        return True
 class Prime:
     def __init__(self,max):
         self.start=2
@@ -128,13 +137,23 @@ class Prime:
         if self.start>self.max:
             raise StopIteration
 
-        while not self.is_prime(self.start):
+        while not is_prime(self.start):
             self.start+=1
         prime_number=self.start
         self.start+=1
         return prime_number
-    @staticmethod
-    def is_prime(num):
+   
+    
+iter3=Prime(20)
+print(next(iter3))
+print(next(iter3))
+print(next(iter3))
+print(next(iter3))
+print(next(iter3))
+print(next(iter3))
+
+
+def is_prime(num):
         if num<2:
             return False
         for number in range(2,int(num**0.5)+1):
@@ -142,9 +161,33 @@ class Prime:
                 return False
         
         return True
+class Prime:
+    def __init__(self,max):
+        self.start=2
+        self.prime=1
+        self.max=max
+    def __iter__(self):
+        return self
+    def __next__(self):
+        if self.start<=self.max:
+            self.prime+=1
+            while True:
+                if is_prime(self.prime)==True:
+                    self.start+=1
+                    return self.prime
+            else:
+                self.prime+=1
+        else:
+            raise StopIteration
+
+   
+    
 iter3=Prime(20)
 print(next(iter3))
 print(next(iter3))
+print(next(iter3))
+print(next(iter3))
+
 
 
 
