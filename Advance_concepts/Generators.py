@@ -95,6 +95,44 @@ print(next(var))
 print(next(var))
 print(next(var))
 
+print()
+
+#############################################################################
+
+def armstrong_gen():
+    num=1
+    while True:
+        length=len(str(num))
+        arms=0
+        number=num
+        while number!=0:
+            last_digit=number%10
+            arms+=last_digit**length
+            number//=10
+        else:
+            if arms==num:
+                yield arms
+                # num+=1
+        num+=1
+        arms=0
+        length=len(str(num))
+        number=num
+var=armstrong_gen()
+print(next(var))
+print(next(var))
+print(next(var))
+print(next(var))
+print(next(var))
+print(next(var))
+print(next(var))
+print(next(var))
+print(next(var))
+print(next(var))
+print(next(var))
+print(next(var))
+print(next(var))
+print(next(var))
+
 
 
 
