@@ -133,6 +133,33 @@ print()
 
 #####################################################################################
 
+''' Strong numbers '''
+
+def strong_gen():
+    num=1
+    while True:
+        sum=0
+        temp=num
+        while temp!=0:
+            last=temp%10
+            fact=1
+            for number in range(1,last+1):
+                fact*=number
+            sum+=fact
+            temp//=10
+        if sum==num:
+            yield num
+        num+=1
+var=strong_gen()
+print(next(var))
+print(next(var))
+print(next(var))
+print(next(var))
+print(next(var))
+
+
+
+
 
 
 
