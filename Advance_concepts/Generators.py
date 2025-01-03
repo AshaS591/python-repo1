@@ -112,11 +112,9 @@ def armstrong_gen():
         else:
             if arms==num:
                 yield arms
-                # num+=1
+               
         num+=1
-        arms=0
-        length=len(str(num))
-        number=num
+    
 var=armstrong_gen()
 print(next(var))
 print(next(var))
@@ -128,10 +126,7 @@ print(next(var))
 print(next(var))
 print(next(var))
 print(next(var))
-print(next(var))
-print(next(var))
-print(next(var))
-print(next(var))
+
 
 
 print()

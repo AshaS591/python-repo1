@@ -134,10 +134,11 @@ class Armstrong:
     def __iter__(self):
         return self
     def __next__(self):
-        length=len(str(self.num))
-        num=self.num
-        arms=0
+        
         while True:
+            length=len(str(self.num))
+            num=self.num
+            arms=0
             while num!=0:
                 last_digit=num%10
                 arms+=last_digit**length
@@ -147,9 +148,7 @@ class Armstrong:
                 self.num+=1
                 return self.num-1
             self.num+=1
-            num = self.num
-            arms = 0
-            length = len(str(self.num))
+           
 armst=Armstrong()
 print(next(armst))
 print(next(armst))
