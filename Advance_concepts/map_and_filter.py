@@ -38,3 +38,15 @@ def get_vowels(city):
     return vowels
 res=map(get_vowels,cities)
 print(list(res))
+
+'''wap to find square root of each number in a collection using map function'''
+numbers=[2,8,4,9,12,16]
+res=map(lambda num:num**0.5,numbers)
+print(list(res))
+
+# or
+
+def sq_root(num):
+    return num**0.5
+res=map(sq_root,numbers)
+print(list(res))
