@@ -1,3 +1,5 @@
+''' Map function'''
+
 ''' Map function to find cube of each number of a collection'''
 def cube(num):
     return num**3
@@ -60,4 +62,12 @@ for item in res:
 ''' wap to check if a number is positive or negative for each item in a collection using map function'''
 numbers=[0,2,-9,4,-7,3,5]
 res=map(lambda num:True if num>=0 else False,numbers)
+print(list(res))
+
+################################### Filter function #################################################
+
+''' wap to filter all even number from a collection using filter function '''
+
+numbers=[1,4,5,8,9,3,2]
+res=filter(lambda num:True if num%2==0 else False,numbers)
 print(list(res))
