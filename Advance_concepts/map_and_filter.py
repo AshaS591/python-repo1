@@ -50,3 +50,9 @@ def sq_root(num):
     return num**0.5
 res=map(sq_root,numbers)
 print(list(res))
+
+'''wap to return the last item of nested collection if the length is morethan 3 else return first item from ollection using map function'''
+collections=[(10,40),'lion',['hi','bye'],'python',[1,2,3,4,5]]
+res=map(lambda collection:collection[-1] if len(collection)>3 else collection[0],collections)
+for item in res:
+    print(item)
