@@ -71,3 +71,8 @@ print(list(res))
 numbers=[1,4,5,8,9,3,2]
 res=filter(lambda num:True if num%2==0 else False,numbers)
 print(list(res))
+
+'''wap to filter the multiples of 3 and 5 from a given coolection'''
+numbers=[10,3,5,8,9,15,20,30]
+res=filter(lambda num:True if num%3==0 or num%5==0 else False,numbers)
+print(list(res))
