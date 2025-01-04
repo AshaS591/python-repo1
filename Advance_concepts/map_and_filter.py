@@ -28,3 +28,13 @@ names=['asha','suki','bhavani','shashi']
 res=map(lambda name:name[::-1],names)
 print(list(res))
 
+''' wap to get vowels from each name in a collection using map function'''
+cities=['kolar','bengaluru','delhi','mysore']
+def get_vowels(city):
+    vowels=''
+    for char in city:
+        if char in 'aeiouAEIOU':
+            vowels+=char
+    return vowels
+res=map(get_vowels,cities)
+print(list(res))
