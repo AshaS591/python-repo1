@@ -56,3 +56,8 @@ collections=[(10,40),'lion',['hi','bye'],'python',[1,2,3,4,5]]
 res=map(lambda collection:collection[-1] if len(collection)>3 else collection[0],collections)
 for item in res:
     print(item)
+
+''' wap to check if a number is positive or negative for each item in a collection using map function'''
+numbers=[0,2,-9,4,-7,3,5]
+res=map(lambda num:True if num>=0 else False,numbers)
+print(list(res))
