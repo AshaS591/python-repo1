@@ -76,3 +76,8 @@ print(list(res))
 numbers=[10,3,5,8,9,15,20,30]
 res=filter(lambda num:True if num%3==0 or num%5==0 else False,numbers)
 print(list(res))
+
+''' wap to filter single valued data from a collection '''
+collection=[10,2+3j,[1,2],{9,0}]
+res=filter(lambda num:True if type(num) in (int,complex,bool,float) else False,collection)
+print(list(res))
