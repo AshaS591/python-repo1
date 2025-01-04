@@ -23,3 +23,8 @@ names=['asha','suki','bhavani','shashi']
 res=map(lambda name:ord(name[0]),names)
 print(list(res))
 
+'''wap to return reverse of name of each item in a collection using map function'''
+names=['asha','suki','bhavani','shashi']
+res=map(lambda name:name[::-1],names)
+print(list(res))
+
