@@ -4,8 +4,8 @@
 
 ''' writing into the text file'''
 
-# file=open('movies.txt','w')
-# file.writelines(['1.kantara\n','2.bahubali\n'])
+file=open('movies.txt','w')
+file.writelines(['1.kantara\n','2.bahubali\n','3.kirik party'])
 
 # file.close()
 
@@ -39,3 +39,10 @@
 # file=open('movies.txt','r')
 # print(file.readlines())
 # file.close()
+
+''' wap to print a movie name in a file which has k as 3rd character'''
+file=open('movies.txt','r')
+for line in file.readlines():
+    if line[2]=='k':
+        print(line,end='')
+file.close()
