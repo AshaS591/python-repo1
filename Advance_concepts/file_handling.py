@@ -44,5 +44,24 @@ file.writelines(['1.kantara\n','2.bahubali\n','3.kirik party'])
 file=open('movies.txt','r')
 for line in file.readlines():
     if line[2]=='k':
-        print(line,end='')
+        print(line)
+file.close()
+
+''' wap to find no of characters, no of words or number of lines in Python text file'''
+
+file=open('movies.txt')
+count_characters=len(file.read())
+print(count_characters)
+file.seek(0)
+count_words=len(file.read().split())
+print(count_words)
+file.seek(0)
+
+count_lines=len(file.readlines())
+print(count_lines)
+file.close()
+
+'''Write a statement to write the string 'Welcome! Please have a seat' in the file wel.txt, that has not yet been created.'''
+file=open('wel.txt','w')
+file.write('Welcome! Please have a seat\n')
 file.close()
