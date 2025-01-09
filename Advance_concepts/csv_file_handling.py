@@ -83,7 +83,7 @@
 import csv
 def get_even_records():
     file=open('emp.csv')
-    file.seek(0)
+    # file.seek(0)
     reader_obj=csv.reader(file)
     records=[]
     count=0
@@ -99,22 +99,94 @@ def get_even_records():
     return records
        
 print(get_even_records())
-
+print()
 def get_even_records():
     file=open('emp.csv')
-    file.seek(0)
+    # file.seek(0)
     reader_obj=csv.reader(file)
     records=[]
-    count=0
+   
     next(reader_obj)
     for record in reader_obj:
         if reader_obj.line_num%2==0:
-            records.append(record)
-            count+=1
-        else:
-            count+=1
-        
+            records.append(record)      
     file.close()
     return records
        
 print(get_even_records())
+
+def get_avg_sal_of_emps():
+    file=open('emp.csv')
+    # file.seek(0)
+    reader_obj=csv.reader(file)
+    count=0
+    next(reader_obj)
+    sum=0
+    count=0
+    for record in reader_obj:
+        sum+=int(record[4])
+        count+=1
+    avg=sum/count
+        
+    file.close()
+    return avg
+       
+print(get_avg_sal_of_emps())
+
+def get_max_sal_emp():
+    file=open('emp.csv')
+    # file.seek(0)
+    reader_obj=csv.reader(file)
+    records=[]
+    
+    next(reader_obj)
+    for record in reader_obj:
+        records.append(int(record[4]))
+    else:
+        max_sal=max(records)
+    file.seek(0)
+    for data in reader_obj:
+        if data[4]==str(max_sal):
+            file.close()
+            return data[1]
+            
+       
+print(get_max_sal_emp())
+
+def get_records_deptwise():
+    file=open('emp.csv')
+    # file.seek(0)
+    reader_obj=csv.reader(file)
+    records={}
+   
+    next(reader_obj)
+    for record in reader_obj:
+        if record[2] in records:
+            records[record[2]]+=1
+        else:
+            records[record[2]]=1
+        
+    file.close()
+    return records
+       
+print(get_records_deptwise())
+
+def get_record_of_emp_mng_to_emp(name):
+    file=open('emp.csv')
+    file.seek(0)
+    reader_obj=csv.reader(file)
+    records=[]
+    next(reader_obj)
+    for record in reader_obj:
+        if record[1] == name:
+            mgr=record[3]
+    else:
+        file.seek(0)
+        for data in reader_obj:
+            if data[0]==mgr:
+                records.append(data)
+        
+    file.close()
+    return records
+       
+print(get_record_of_emp_mng_to_emp('asha'))
