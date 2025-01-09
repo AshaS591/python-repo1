@@ -1,1 +1,16 @@
-empno,ename,job,mgr,sal,deptno
+empno,ename,job,mgr,sal,deptno
+0123,asha,developer,007,1500,30
+0121,raishan,developer,007,1500,30
+0420,rahul,tester,010,950,10
+0400,ram,devops,020,1100,40
+0303,vyshu,analytics,050,1000,70
+0002,harshi,analytics,050,1000,70
+1002,chandu,research,0100,1250,20
+1013,naveen,tester,010,950,10
+1022,santhosh,reporter,0101,900,50
+2054,priya,reporter,007,800,50
+007,shashank,ceo,001,2000,80
+050,sumalatha,hr,007,1300,60
+0100,srinivas,manager,1022,1750,80
+010,sukrutha,accountant,0100,1300,90
+020,bhavani,supervisor,007,1150,100
