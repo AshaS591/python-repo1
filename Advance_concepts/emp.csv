@@ -14,3 +14,4 @@ empno,ename,job,mgr,sal,deptno
 0100,srinivas,manager,1022,1750,80
 010,sukrutha,accountant,0100,1300,90
 020,bhavani,supervisor,007,1150,100
+0234,kalyan,developer,0100,1500,30
