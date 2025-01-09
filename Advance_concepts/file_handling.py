@@ -72,6 +72,8 @@
 
 file=open('PYTHON.TXT')
 count=0
+list3=file.readlines()
+print(list3)
 for line in file.readlines():
     for char in line:
         if char.isupper():
