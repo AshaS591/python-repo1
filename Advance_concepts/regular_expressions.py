@@ -31,3 +31,55 @@ pattern='hey+'
 result=re.findall(pattern,string)
 print(result)
 
+string='hello hellllo...'
+pattern='hell+o'
+result=re.findall(pattern,string)
+print(result)
+
+''' 4. . - > any character '''
+
+string='hey stop there,heyyy i am coming...'
+pattern='i.'
+result=re.findall(pattern,string)
+print(result)
+
+string='hey stop there,heyyy i am coming...'
+pattern='hey.'
+result=re.findall(pattern,string)
+print(result)
+
+''' 5. [^characters] negation of a char set'''
+
+string='hey stop there,heyyy i am coming...'
+pattern='[^aeiou\W]' #except vowels
+result=re.findall(pattern,string)
+print(result)
+
+string='hey stop there,heyyy i am coming...'
+pattern='[^\s]'
+result=re.findall(pattern,string)
+print(result)
+
+''' 6. ^[characters] startswith'''
+
+string='hey stop there,heyyy i am coming...'
+pattern='^hey'
+result=re.findall(pattern,string)
+print(result)
+
+string='my name is asha'
+pattern='^asha'
+result=re.findall(pattern,string)
+print(result)
+
+''' 7. $ -> endswith '''
+
+string='my name is asha and my father call me shashi'
+pattern='shashi$'
+result=re.findall(pattern,string)
+print(result)
+
+string='hey stop there,heyyy i am coming...'
+pattern='coming..$'
+result=re.findall(pattern,string)
+print(result)
