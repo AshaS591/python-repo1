@@ -754,3 +754,57 @@ for row in range(5):
     print()
 
 
+def human(function):
+    def soul(*args,**kwargs):
+        print('*'*10)
+        function(*args,**kwargs)
+        print('*'*10)
+    return soul
+
+@human
+def body():
+    print('body without soul is dead body')
+
+body()
+
+def outer(n1,n2):
+    def deco1(func):
+        def inner(*args,**kwargs):
+            if n1+n2>10:
+                print(n1+n2)
+                print('#'*20)
+                func(*args,**kwargs)
+                print('#'*20)
+        return inner
+    return deco1
+
+@outer(10,5)
+def random():
+    print('Inside random')
+random()
+
+def outer(cls_addr):
+    def deco(func):
+        def wrapper(*args,**kwargs):
+            print(f' Executing {func.__name__}')
+            print(func(*args,**kwargs))
+            print(f' Executed {func.__name__}')
+        return wrapper
+    
+    for name,address in cls_addr.__dict__.items():
+        if callable(address):
+            setattr(cls_addr,name,deco(address))
+    return cls_addr
+
+@outer
+class Arithmetic:
+    def __init__(self,num1,num2):
+        self.num1=num1
+        self.num2=num2
+    def add(self):
+        return (self.num1+self.num2)
+    def sub(self):
+        return self.num1-self.num2
+
+obj=Arithmetic(20,10)
+obj.add()

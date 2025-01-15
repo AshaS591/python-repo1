@@ -19,7 +19,7 @@
 
 import csv
 
-class GetRecords:
+class EmpInfo:
 
     def get_records_emps_sal_grtn(self,sal):
         file=open('emp.csv')
@@ -85,9 +85,6 @@ class GetRecords:
         
         
         file.close()   
-    
-    
-
     
     def get_even_records1(self):
         file=open('emp.csv')
@@ -192,7 +189,7 @@ class GetRecords:
         file.close()
         return records
         
-record=GetRecords()
+record=EmpInfo()
 print(record.get_records_emps_sal_grtn(1500))
 print(record.get_record_at_line_num(6))
 print(record.get_ename_where_job_is('developer'))
