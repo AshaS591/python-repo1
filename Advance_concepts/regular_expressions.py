@@ -83,3 +83,13 @@ string='hey stop there,heyyy i am coming...'
 pattern='coming..$'
 result=re.findall(pattern,string)
 print(result)
+
+string='hello..\n hello.r'
+pattern=r'hello\.\.'
+res=re.findall(pattern,string)
+print(res)
+
+string=''
+pattern='coming..$'
+result=re.findall(pattern,string)
+print(result)

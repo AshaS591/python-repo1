@@ -1,161 +1,196 @@
 
-''' Generators are the functions,which has yield keyword in it, which returns an iterator address '''
+# ''' Generators are the functions,which has yield keyword in it, which returns an iterator address '''
 
-def even_num_gen():
-    num=0
-    while True:
-        yield num
-        num+=2
-var=even_num_gen()
-print(next(var))
-print(next(var))
-print(next(var))
-print(next(var))
+# def even_num_gen():
+#     num=0
+#     while True:
+#         yield num
+#         num+=2
+# var=even_num_gen()
+# print(next(var))
+# print(next(var))
+# print(next(var))
+# print(next(var))
 
-print()
+# print()
 
-############################################################################
+# ############################################################################
 
-def odd_num_gen():
-    num=1
-    while True:
-        yield num
-        num+=2
-var=odd_num_gen()
-print(next(var))
-print(next(var))
-print(next(var))
-print(next(var))
+# def odd_num_gen():
+#     num=1
+#     while True:
+#         yield num
+#         num+=2
+# var=odd_num_gen()
+# print(next(var))
+# print(next(var))
+# print(next(var))
+# print(next(var))
 
-print()
+# print()
 
-###########################################################################
+# ###########################################################################
 
-def prime_gen():
-    num=2
-    while True:
-        for number in range(2,num):
-            if num%number==0:   
-                break
-        else:
-            yield num
+# def prime_gen():
+#     num=2
+#     while True:
+#         for number in range(2,num):
+#             if num%number==0:   
+#                 break
+#         else:
+#             yield num
             
-        num+=1
-var=prime_gen()
-print(next(var))
-print(next(var))
-print(next(var))
-print(next(var))
+#         num+=1
+# var=prime_gen()
+# print(next(var))
+# print(next(var))
+# print(next(var))
+# print(next(var))
 
-print()
+# print()
 
-###########################################################################
+# ###########################################################################
 
-def multiples_gen(num):
-    factor=1
-    while True:
-        yield num*factor
-        factor+=1
-var=multiples_gen(8)
-print(next(var))
-print(next(var))
-print(next(var))
-print(next(var))
+# def multiples_gen(num):
+#     factor=1
+#     while True:
+#         yield num*factor
+#         factor+=1
+# var=multiples_gen(8)
+# print(next(var))
+# print(next(var))
+# print(next(var))
+# print(next(var))
 
-print()
+# print()
 
-###########################################################################
+# ###########################################################################
 
-def fib_seq_gen():
-    num1,num2=0,1
-    while True:
-        yield num1
-        num1,num2=num2,num1+num2
-var=fib_seq_gen()
-print(next(var))
-print(next(var))
-print(next(var))
-print(next(var))
-print(next(var))
+# def fib_seq_gen():
+#     num1,num2=0,1
+#     while True:
+#         yield num1
+#         num1,num2=num2,num1+num2
+# var=fib_seq_gen()
+# print(next(var))
+# print(next(var))
+# print(next(var))
+# print(next(var))
+# print(next(var))
 
-print()
+# print()
 
-#########################################################################
+# #########################################################################
 
-def perfect_gen():
-    num=1
-    while True:
-        for number in range(1,int(num**0.5)+1):
-            if num/number==number:
-                yield num
-        num+=1
-var=perfect_gen()
-print(next(var))
-print(next(var))
-print(next(var))
-print(next(var))
+# def perfect_gen():
+#     num=1
+#     while True:
+#         for number in range(1,int(num**0.5)+1):
+#             if num/number==number:
+#                 yield num
+#         num+=1
+# var=perfect_gen()
+# print(next(var))
+# print(next(var))
+# print(next(var))
+# print(next(var))
 
-print()
+# print()
 
-#############################################################################
+# #############################################################################
 
-def armstrong_gen():
-    num=1
-    while True:
-        length=len(str(num))
-        arms=0
-        number=num
-        while number!=0:
-            last_digit=number%10
-            arms+=last_digit**length
-            number//=10
-        else:
-            if arms==num:
-                yield arms
+# def armstrong_gen():
+#     num=1
+#     while True:
+#         length=len(str(num))
+#         arms=0
+#         number=num
+#         while number!=0:
+#             last_digit=number%10
+#             arms+=last_digit**length
+#             number//=10
+#         else:
+#             if arms==num:
+#                 yield arms
                
-        num+=1
+#         num+=1
     
-var=armstrong_gen()
-print(next(var))
-print(next(var))
-print(next(var))
-print(next(var))
-print(next(var))
-print(next(var))
-print(next(var))
-print(next(var))
-print(next(var))
-print(next(var))
+# var=armstrong_gen()
+# print(next(var))
+# print(next(var))
+# print(next(var))
+# print(next(var))
+# print(next(var))
+# print(next(var))
+# print(next(var))
+# print(next(var))
+# print(next(var))
+# print(next(var))
 
 
 
-print()
+# print()
 
-#####################################################################################
+# #####################################################################################
 
-''' Strong numbers '''
+# # ''' Strong numbers '''
 
-def strong_gen():
-    num=1
-    while True:
-        sum=0
-        temp=num
-        while temp!=0:
-            last=temp%10
-            fact=1
-            for number in range(1,last+1):
-                fact*=number
-            sum+=fact
-            temp//=10
-        if sum==num:
-            yield num
-        num+=1
-var=strong_gen()
-print(next(var))
-print(next(var))
-print(next(var))
-print(next(var))
-print(next(var))
+# # def strong_gen():
+# #     num=1
+# #     while True:
+# #         sum=0
+# #         temp=num
+# #         while temp!=0:
+# #             last=temp%10
+# #             fact=1
+# #             for number in range(1,last+1):
+# #                 fact*=number
+# #             sum+=fact
+# #             temp//=10
+# #         if sum==num:
+# #             yield num
+# #         num+=1
+# # var=strong_gen()
+# # print(next(var))
+# # print(next(var))
+# # print(next(var))
+# # print(next(var))
+# # print(next(var))
+
+# def gen():
+#     print('hello')
+#     yield 1
+#     yield 2
+#     yield 3
+#     print('bye')
+# var=gen()
+# print(next(var))
+# print(next(var))
+# print(next(var))
+
+
+def claculate(index):
+    sum=0
+    for num in range(index,len(arr)):
+        sum+=arr[num]
+        if sum==target:
+            break
+    return sum
+
+arr=[1,2,3]
+target=3
+count=0
+for index in range(len(arr)):
+    if arr[index]==target:
+        count+=1
+    else:
+        res=claculate(index)
+        if res==target:
+            count+=1
+        
+print(count)
+
+
 
 
 
