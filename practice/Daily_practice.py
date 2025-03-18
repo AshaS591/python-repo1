@@ -819,9 +819,258 @@ def factorial(num1):
 var=factorial(5)
 print(next(var))
 
-var=factorial(6)
+var = factorial(6)
 print(next(var))
 
-var=factorial(7)
+var = factorial(7)
 print(next(var))
 
+# import csv
+# file = open('sample.csv','a',newline='')
+# writer_obj=csv.writer(file)
+# # writer_obj.writerow(['name','age','branch'])
+# # writer_obj.writerow(['asha','22','cse'])
+# writer_obj.writerow(['arha','23','ise'])
+
+# file.close()
+
+import csv
+file = open('sample.csv')
+reader_obj = csv.reader(file)
+# print(reader_obj)
+next(reader_obj)
+for data in reader_obj:
+    print(data)
+file.close()
+
+# file = open('sample.csv')
+# dir_obj=csv.DictReader(file)
+# for item in dir_obj:
+#     print(item)
+# file.close()
+
+# file = open('sample.csv','a',newline='')
+# writer_obj = csv.writer(file)
+# writer_obj.writerows([['anu','23','cbd'],['amala','21','bca']])
+# file.close()
+
+file = open('sample.csv')
+rd=csv.DictReader(file)
+next(rd)
+for data in rd:
+    if int(data['age']) > 20:
+        print(data)
+file.close()
+
+file = open('sample.csv')
+rd=csv.DictReader(file)
+# next(rd)
+for data in rd:
+    if rd.line_num == 2:
+        print(data)
+file.close()
+
+# class FileHandling:
+#     def get_names(self,filename):
+#         file = open(filename)
+#         rd=csv.reader(file)
+#         for data in rd:
+#             if data['name']
+
+
+#         file.close()
+
+import json
+with open('new.json','r') as file:
+    # py_data={
+    #     'name':'asha',
+    #     'age':22,
+    #     'hobbies':('singing','listening music')
+    # }
+    # var=json.dump(py_data,file)
+    var=json.load(file)
+print(var)
+
+py_data={
+        'name':'asha',
+        'age':22,
+        'hobbies':('singing','listening music')
+    }
+string = json.dumps(py_data)
+print(string)
+
+string = json.loads(string)
+print(string)
+
+
+class Home:
+    def __init__(self,name):
+        self.name=name
+    def display(self):
+        print(self.name)
+
+class House(Home):
+    def __init__(self, name):
+        # super().__init__(name)
+        Home.__init__(self,name)
+    def display(self):
+        return Home.display(self)
+a1=Home('Nilaya')
+a1.display()
+        
+def armstrong():
+    num=1
+    while True:
+        org=num
+        arms=0
+        while org!=0:
+            last=org%10
+            arms+=(last)**len(str(num))
+            org//=10
+        if arms==num:
+            yield num
+            # num+=1
+        num+=1
+var=armstrong()
+print(next(var))
+print(next(var))
+print(next(var))
+print(next(var))
+print(next(var))
+print(next(var))
+print(next(var))
+print(next(var))
+print(next(var))
+print(next(var))
+print(next(var))
+print(next(var))
+print(next(var))
+print(next(var))
+
+def prime():
+    num=2
+    while True:
+        for number in range(2,num):
+            if num % number==0:
+                break
+        else:
+            yield num
+        num+=1
+var= prime()
+print(next(var))
+print(next(var))
+print(next(var))
+print(next(var))
+print(next(var))
+
+def perfect_square():
+    num=1
+    while True:
+        for number in range(1,num+1):
+            if num / number == number:
+                yield num
+        num+=1
+var = perfect_square()
+print(next(var))
+print(next(var))
+print(next(var))
+print(next(var))
+print(next(var))
+
+        
+def strong():
+    num = 1
+    while True:
+        rev=0
+        sum=0
+        org=num
+        while org != 0:
+            last = org%10
+            rev=rev*10+last
+            org//=10
+            fact=1
+            for number in range(1,last+1):
+                fact*=number
+            sum+=fact
+    
+        if sum == num:
+            yield num
+        num+=1
+var =strong()
+print(next(var))
+print(next(var))
+print(next(var))
+print(next(var))
+
+class Deco:
+    def __call__(self,cls_addr):
+        def deco1(func_add):
+            def wrap(*args,**kwargs):
+                print(f'Execting {func_add.__name__}')
+                print(func_add(*args,**kwargs))
+                print(f'executed {func_add.__name__}')
+            return wrap
+        
+        for name,address in cls_addr.__dict__.items():
+            if callable(address):
+                setattr(cls_addr,name,deco1(address))
+        return cls_addr
+@Deco()
+class Display:
+    def disp1(self):
+        return 'display1'
+    def disp2(self):
+        return 'display2'
+    def disp3(self):
+        return 'display3'
+    def disp4(self):
+        return 'display4'                                                                                                                                                                
+obj = Display()
+obj.disp1()
+obj.disp2()
+obj.disp3()
+obj.disp4()
+
+
+import re
+
+string='Hello asha how are u ashh'
+pattern='asha?'
+print(re.findall(pattern,string))
+
+string = ' hello my adhar no is 3749 5237 0962'
+pattern='[0-9]{4}\s[0-9]{4}\s[0-9]{4}'
+print(re.findall(pattern,string))
+
+string = ' hello my pan no is RMLPS5403K'
+pattern='[A-Z]{5}[0-9]{4}[A-Z]'
+print(re.findall(pattern,string))
+
+string = ' dob is 14/01/2003, 31/12/9909'
+pattern=r'(?:(?:[012][0-9]|3[01])/(?:0[0-9]|1[012])/(?:[0-9]{4}))'
+print(re.findall(pattern,string))
+
+string = ' ip addresses 1.89.87.9'
+pattern=r'(:?(:?(:?0|1[0-9]{0,3}|2[0-5]{1,3}])\.){3}(:?0|1[0-9]{0,3}|2[0-5]{0,3}]))'
+print(re.findall(pattern,string))
+
+def sort_string(string):
+    words=string.split()
+    for inx in range(1,len(words)):
+        for index in range(len(words)-inx):
+            if words[index]>words[index+1]:
+                words[index],words[index+1]=words[index+1],words[index]
+                
+            else:
+                continue
+    
+    return words
+string = 'python sql webtech selenium'
+res=sort_string(string)
+output=''
+for word in res:
+    output+=word+' '
+print(output)
+def main()->int:
+    return 'hello'
+print(main())
