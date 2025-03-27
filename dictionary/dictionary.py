@@ -26,3 +26,11 @@ print(res)
 
 details.update({'age':21})
 print(details)
+
+details = {
+    'names':{'name':['a','p','d']},
+    'ages':{'age':'723098'}
+}
+print(details['names']['name'][0])
+print(details['ages']['age'][0])
+print(details.keys())
