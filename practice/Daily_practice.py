@@ -1074,3 +1074,244 @@ print(output)
 def main()->int:
     return 'hello'
 print(main())
+
+""" Programs on List """
+
+# 1.
+
+items = [10,23,30,45,89,90]
+new_items = [item**2 for item in items]
+print(new_items)
+
+squares_of_even=[num**2 for num in items if num%2==0]
+print(squares_of_even)
+
+# Write a program to calculate the factorial of a number using a loop.
+fact = 1
+num = int(input('Enter a number :'))
+factor=1
+while factor<=num:
+    fact*=factor
+    factor+=1
+print(f'Factorial of {num} is {fact}')
+
+# Create a simple calculator that can perform addition, subtraction, multiplication, and division.
+def add(num1,num2):
+    return num1+num2
+def sub(num1,num2):
+    return num1-num2
+def mul(num1,num2):
+    return num1*num2
+def div(num1,num2):
+    return num1/num2
+num1 = int(input('Enter num1 value :'))
+num2 = int(input('Enter num2 value :'))
+
+print(add(num1,num2))
+print(mul(num1,num2))
+print(div(num1,num2))
+print(sub(num1,num2))
+
+# Take a string input and count the number of vowels in it.
+def count_vowels(string):
+    count=0
+    for char in string:
+        if char in 'AEIOUaeiou':
+            count+=1
+    return count
+string = input('Enter a word :')
+print(f'Number of vowels in {string} is {count_vowels(string)}')
+
+# Print all prime numbers between 1 and 100.
+
+prime_num=[]
+def is_prime(num):
+    for n in range(2,num):
+        if num%n==0:
+            break
+    else:
+        prime_num.append(num)
+for num in range(2,101):
+    is_prime(num)
+print(prime_num)
+
+# Write a program to reverse a given number using a while loop.
+
+num = 5687
+rev=0
+while num!=0:
+    last=num%10
+    rev=rev*10+last
+    num//=10
+print(rev)
+
+# Find the largest number in a list using a for loop.
+
+max_num=0
+numbers = [23,17,89,23,90]
+
+for num in numbers:
+    max_num=max(max_num,num)
+print(max_num)
+
+# Generate the Fibonacci series up to n terms.
+def fibonacci_nums():
+    num1=0
+    num2=1
+    while True:
+        yield num1
+        num1,num2=num2,num1+num2
+fib=fibonacci_nums()
+print(next(fib))
+print(next(fib))
+print(next(fib))
+print(next(fib))
+
+# Check if a number is a palindrome.
+
+num = int(input('Enter a number :'))
+org=num
+rev=0
+while num!=0:
+    last = num%10
+    rev=rev*10+last
+    num//=10
+if rev==org:
+    print('Palindrome...')
+else:
+    print('Not a Palindrome...')
+
+# Write a function to remove duplicates from a list.
+
+def remove_duplicates(collection,index=0,new=[]):
+    if index==len(collection):
+        return new
+    if collection[index] not in new:
+        new.append(collection[index])
+    return remove_duplicates(collection,index+1,new)
+items = [12,34,56,12,90,'hi','hi']
+print(remove_duplicates(items))
+
+# Sort a list of tuples by the second element.
+
+items = [(1,20),('hello',90),(67,2)]
+sorted_data=sorted(items,key=lambda x:x[1])
+print(sorted_data)
+
+# Create a dictionary from two lists: one of keys and one of values.
+
+fruits = ['mango','grapes','pomogranate','banana','strawberry']
+prices = [100,200,250,80,150]
+fruits_prices = {fruit:price for fruit,price in zip(fruits,prices)}
+print(fruits_prices)
+
+# Count the frequency of each word in a sentence.
+
+sentence = input('Enter a sentence :')
+words=sentence.split()
+frequency_of_words={word:words.count(word) for word in words}
+print(frequency_of_words)
+
+# Merge two dictionaries into one.
+
+student_details = {'name':'asha','age':22}
+asha_details = {'name':'Asha S','education':'B.Tech','stream':'CSE'}
+student_details.update(asha_details)
+print(student_details)
+
+# Write a function to check if a string is a palindrome.
+
+def is_palindrome(string):
+    if string == string[::-1]:
+        return 'Palindrome...'
+    else:
+        return 'Not a palindrome..'
+string = input('Enter a string :')
+print(is_palindrome(string))
+
+# Create a function that accepts a list and returns the sum of its elements.
+
+def sum_of_elements(numbers):
+    sum=0
+    for num in numbers:
+        sum+=num
+    return sum
+numbers=[10,29,89,98,23]
+print(sum_of_elements(numbers))
+
+# Write a function that finds the second largest number in a list.
+
+def second_largest(numbers):
+    numbers.sort(reverse=True)
+    return numbers[1]
+numbers=[34,9,23,87,34,56]
+print(second_largest(numbers))
+
+# # Create a recursive function to compute the nth Fibonacci number.
+def fibonacci(num):
+    if num==1:
+        return 0
+    elif num==2 or num==3:
+        return 1
+    return fibonacci(num-1)+fibonacci(num-2)
+print(fibonacci(5))
+
+# Write a function that returns the number of uppercase and lowercase letters in a string.
+
+def count_upper_lower(string):
+    lower=0
+    upper=0
+    for char in string:
+        if char>='A' and char<='Z':
+            upper+=1
+        elif char>='a' and char<='z':
+            lower+=1
+    return lower,upper
+print(count_upper_lower('VyTbnbETRDjiu'))
+
+
+# Write a program that reads a file and prints its content.
+with open('read.txt','w') as file:
+    file.writelines(['hey hi my name is asha...\n','welcome to old version\n','Octopuses have three hearts\n','Birds are dinosaurs'])
+
+with open('read.txt','r') as file1:
+    
+    file1.seek(0)
+    print(file1.read())
+    
+
+# Count the number of lines, words, and characters in a file.
+with open('read.txt','r') as file1:
+    
+    file1.seek(0)
+    lines=0
+    words=0
+    chars=0
+    data=file1.readlines()
+    for line in data:
+        lines+=1
+        list_of_words=line.split()
+        words+=len(list_of_words)
+        for char in line:
+            chars+=1
+    print('Words :',words)
+    print('lines :',lines)
+    print('Characters :',chars)
+
+# Handle exceptions for division by zero and invalid inputs.
+while True:
+    try:
+        dividend = int(input('Enter a number :'))
+        divisor = int(input('Enter a number :'))
+        res = dividend/divisor
+    except ZeroDivisionError:
+        print('Enter the number otherthan zero for divisor...')
+    except ValueError:
+        print('Enter only numerical data...')
+    else:
+        print("Quotient is :",res)
+        break
+
+# Write to a file and then read from it.
+
+# Copy contents of one file into another.
